@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Vincent",
+    "gender": "Male",
+    "directory": "vincent",
+    "images": [
+      "https://github.com/jose-pires-neto/Cyberpunk-2077-API.git/images/characters/sex/male/vincent/v01.png",
+      "https://github.com/jose-pires-neto/Cyberpunk-2077-API.git/images/characters/sex/male/vincent/v02.png"
+    ],
+    "description": "Personagem identificado em male/vincent",
+    "affiliation": "Unknown"
+  }
+]
