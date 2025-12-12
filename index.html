@@ -392,7 +392,7 @@
                     <div class="relative">
                         <!-- Main Image -->
                         <div id="modal-main-image"
-                            class="aspect-square bg-cyber-black rounded-lg overflow-hidden relative">
+                            class="aspect-square bg-cyber-black rounded-lg overflow-hidden relative border-2 border-cyber-cyan/30">
                             <img src="" alt="" class="w-full h-full object-cover">
 
                             <!-- Navigation Arrows -->
@@ -424,23 +424,69 @@
                         </div>
                     </div>
 
-                    <!-- Info -->
+                    <!-- Info Panel - Pokédex Style -->
                     <div class="space-y-4">
+                        <!-- Character ID Badge -->
+                        <div class="flex items-center justify-between">
+                            <span id="modal-id-badge"
+                                class="font-mono text-xs text-gray-500 bg-cyber-black px-2 py-1 rounded">#001</span>
+                            <span id="modal-status-badge" class="text-xs font-bold px-3 py-1 rounded-full"></span>
+                        </div>
+
+                        <!-- Name -->
                         <div>
-                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Nome</p>
-                            <p id="modal-char-name" class="text-xl font-bold text-white"></p>
+                            <p id="modal-char-name"
+                                class="font-display text-2xl md:text-3xl font-black text-white tracking-wide"></p>
                         </div>
-                        <div id="modal-gender-section">
-                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Gênero</p>
-                            <p id="modal-gender" class="text-lg text-cyber-cyan"></p>
+
+                        <!-- Stats Grid - Pokédex Style -->
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- Gender -->
+                            <div id="modal-gender-section"
+                                class="bg-cyber-black/50 border border-white/10 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Gênero</p>
+                                <p id="modal-gender" class="text-lg font-semibold text-cyber-cyan"></p>
+                            </div>
+
+                            <!-- Affiliation -->
+                            <div id="modal-affiliation-section"
+                                class="bg-cyber-black/50 border border-white/10 rounded-lg p-3">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Afiliação</p>
+                                <p id="modal-affiliation" class="text-lg font-semibold text-cyber-magenta truncate"></p>
+                            </div>
+
+                            <!-- Occupation -->
+                            <div id="modal-occupation-section"
+                                class="bg-cyber-black/50 border border-white/10 rounded-lg p-3 hidden">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Profissão</p>
+                                <p id="modal-occupation" class="text-lg font-semibold text-cyber-green"></p>
+                            </div>
+
+                            <!-- Status -->
+                            <div id="modal-status-section"
+                                class="bg-cyber-black/50 border border-white/10 rounded-lg p-3 hidden">
+                                <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Status</p>
+                                <p id="modal-status" class="text-lg font-semibold"></p>
+                            </div>
                         </div>
-                        <div id="modal-affiliation-section">
-                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Afiliação</p>
-                            <p id="modal-affiliation" class="text-lg text-cyber-magenta"></p>
+
+                        <!-- Description -->
+                        <div class="bg-cyber-black/30 border border-white/5 rounded-lg p-4">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Descrição</p>
+                            <p id="modal-description" class="text-gray-300 leading-relaxed text-sm"></p>
                         </div>
-                        <div>
-                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Descrição</p>
-                            <p id="modal-description" class="text-gray-300 leading-relaxed"></p>
+
+                        <!-- Wiki Link -->
+                        <div id="modal-wiki-section" class="hidden">
+                            <a id="modal-wiki" href="#" target="_blank"
+                                class="flex items-center gap-2 text-cyber-cyan hover:text-cyber-yellow transition-colors group">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                <span class="font-semibold group-hover:underline">Ver na Wiki Fandom</span>
+                                <span class="text-xs text-gray-500">↗</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -647,8 +693,16 @@
             currentCharacterImages = char.images || [];
             currentImageIndex = 0;
 
+            // Header name
             document.getElementById('modal-name').textContent = char.name;
+
+            // ID Badge (Pokédex style)
+            document.getElementById('modal-id-badge').textContent = `#${String(char.id).padStart(3, '0')}`;
+
+            // Character name
             document.getElementById('modal-char-name').textContent = char.name;
+
+            // Description
             document.getElementById('modal-description').textContent = char.description || 'Sem descrição disponível.';
 
             // Gender
@@ -667,6 +721,56 @@
                 document.getElementById('modal-affiliation').textContent = char.affiliation;
             } else {
                 affSection.classList.add('hidden');
+            }
+
+            // Occupation (NEW)
+            const occSection = document.getElementById('modal-occupation-section');
+            if (char.occupation) {
+                occSection.classList.remove('hidden');
+                document.getElementById('modal-occupation').textContent = char.occupation;
+            } else {
+                occSection.classList.add('hidden');
+            }
+
+            // Status (NEW) - with color coding
+            const statusSection = document.getElementById('modal-status-section');
+            const statusBadge = document.getElementById('modal-status-badge');
+            if (char.status) {
+                statusSection.classList.remove('hidden');
+                const statusText = document.getElementById('modal-status');
+                statusText.textContent = char.status;
+
+                // Color coding for status
+                const statusLower = char.status.toLowerCase();
+                if (statusLower.includes('alive') || statusLower.includes('vivo')) {
+                    statusText.className = 'text-lg font-semibold text-cyber-green';
+                    statusBadge.textContent = '● ALIVE';
+                    statusBadge.className = 'text-xs font-bold px-3 py-1 rounded-full bg-cyber-green/20 text-cyber-green';
+                } else if (statusLower.includes('dead') || statusLower.includes('deceased') || statusLower.includes('morto')) {
+                    statusText.className = 'text-lg font-semibold text-cyber-red';
+                    statusBadge.textContent = '● DEAD';
+                    statusBadge.className = 'text-xs font-bold px-3 py-1 rounded-full bg-cyber-red/20 text-cyber-red';
+                } else if (statusLower.includes('determinant') || statusLower.includes('dependent')) {
+                    statusText.className = 'text-lg font-semibold text-cyber-yellow';
+                    statusBadge.textContent = '◐ VARIABLE';
+                    statusBadge.className = 'text-xs font-bold px-3 py-1 rounded-full bg-cyber-yellow/20 text-cyber-yellow';
+                } else {
+                    statusText.className = 'text-lg font-semibold text-gray-400';
+                    statusBadge.textContent = '';
+                    statusBadge.className = 'hidden';
+                }
+            } else {
+                statusSection.classList.add('hidden');
+                statusBadge.className = 'hidden';
+            }
+
+            // Wiki URL (NEW)
+            const wikiSection = document.getElementById('modal-wiki-section');
+            if (char.wiki_url) {
+                wikiSection.classList.remove('hidden');
+                document.getElementById('modal-wiki').href = char.wiki_url;
+            } else {
+                wikiSection.classList.add('hidden');
             }
 
             // Show/hide carousel arrows based on image count
