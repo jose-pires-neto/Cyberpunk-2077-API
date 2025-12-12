@@ -72,28 +72,47 @@ for char in with_images[:5]:
   "affiliation": "Arasaka",
   "description": "Adam Smasher is a full borg mercenary...",
   "has_images": true,
-  "images": [
-    "https://.../adam_smasher_01.png",
-    "https://.../adam_smasher_02.png"
-  ],
+  "images": ["https://.../adam_smasher_01.png"],
   "occupation": "Solo",
   "status": "Alive",
   "wiki_url": "https://cyberpunk.fandom.com/wiki/Adam_Smasher"
 }
 ```
 
-| Campo | Tipo | Descrição |
-|-------|------|-----------|
-| `id` | number | Identificador único |
-| `name` | string | Nome do personagem |
-| `gender` | string | "Male", "Female" ou "Unknown" |
-| `affiliation` | string | Gangue, corporação ou profissão |
-| `description` | string | Descrição do personagem |
-| `has_images` | boolean | Se possui imagens disponíveis |
-| `images` | array | URLs das imagens |
-| `occupation` | string | (opcional) Profissão |
-| `status` | string | (opcional) Vivo, Morto, etc. |
-| `wiki_url` | string | (opcional) Link para a Wiki |
+### Gang
+```json
+{
+  "id": 1,
+  "name": "Maelstrom",
+  "description": "Gangue obcecada por cyberware...",
+  "founder": "Boz",
+  "leader": "Royce",
+  "hq": "Totentanz",
+  "territory": "Northside Industrial District",
+  "affiliations": ["Scavengers"],
+  "wiki_url": "https://cyberpunk.fandom.com/...",
+  "images": ["https://.../maelstrom_01.png"]
+}
+```
+
+### District (com Subdistritos)
+```json
+{
+  "id": 1,
+  "name": "Watson",
+  "description": "Distrito decadente no norte...",
+  "danger_level": "Moderate",
+  "wiki_url": "https://cyberpunk.fandom.com/...",
+  "images": ["https://.../watson_01.png"],
+  "subdistricts": [
+    {
+      "name": "Kabuki",
+      "description": "Área com mercado de rua...",
+      "images": ["https://.../kabuki_01.png"]
+    }
+  ]
+}
+```
 
 ---
 
@@ -108,22 +127,24 @@ Cyberpunk-2077-API/
 │       ├── districts.json
 │       └── affiliations.json
 ├── images/
-│   └── characters/
-│       └── sex/
-│           ├── male/
-│           │   └── adam_smasher/
-│           │       ├── adam_smasher_01.png
-│           │       └── info.json
-│           ├── female/
-│           │   └── judy_alvarez/
-│           └── unknown/
+│   ├── characters/
+│   │   └── sex/{male,female,unknown}/{name}/
+│   ├── gangs/
+│   │   └── {gang_name}/
+│   └── districts/
+│       └── {district_name}/
+│           ├── info.json
+│           ├── {images}
+│           └── subdistricts/
+│               └── {subdistrict_name}/
 ├── scraper/
 │   └── scraper.py          # Extrator de dados da Wiki
-├── gerador.py              # Gerador do characters.json
+├── gerador.py              # Gerador dos JSONs da API
 ├── index.html              # Site showcase
 ├── docs.html               # Documentação
 └── terms.html              # Termos de uso
 ```
+
 
 ---
 

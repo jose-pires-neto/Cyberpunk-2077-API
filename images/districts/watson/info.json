@@ -1,0 +1,13 @@
+{
+  "name": "Watson",
+  "description": "Watson is one of the major districts of Night City, located in the northern portion of the metropolis. In 2077, Watson is seen as a sad and desperate place. It is well known as one of Night City's poorest districts, with many industrial factories and plants being completely abandoned. Watson is also the battleground in the war between Maelstrom and Tyger Claws gangs. The former reigns over the Northside Industrial District (NID), which consists of derelict factories and working-class...",
+  "subdistricts": [
+    "Arasaka Waterfront",
+    "Kabuki",
+    "Little China",
+    "Northside"
+  ],
+  "danger_level": null,
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Watson_%282077%29",
+  "has_images": true
+}

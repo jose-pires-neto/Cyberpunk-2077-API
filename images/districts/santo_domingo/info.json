@@ -1,0 +1,11 @@
+{
+  "name": "Santo Domingo",
+  "description": "Santo Domingo is one of Night City's oldest districts. Corporations use it as a testing ground for industrial projects, destroying old factories just to build new ones, while residents scrape a desperate living in crowded megabuildings — wishing for something better.Cyberpunk 2077 Santo Domingo (English: Saint Dominic) is one of the six districts of Night City in Cyberpunk 2077. This district originates from the old Heywood, which by the 2040s was already being called Santo Domingo.[1] As...",
+  "subdistricts": [
+    "Arroyo",
+    "Rancho Coronado"
+  ],
+  "danger_level": null,
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Santo_Domingo_%282077%29",
+  "has_images": true
+}

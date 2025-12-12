@@ -1,0 +1,12 @@
+{
+  "name": "Pacifica",
+  "description": "Pacifica is one of the major districts of Night City, located in the southern portion of the metropolis. Pacifica was originally envisioned as Night City's vacation resort for the ultra-wealthy. It was to be true paradise, catering to corporate employees and tourists alike and with Militech security contractors protecting its golden sandy beaches, luxurious hotels, and unmatched entertainment.[1] By 2077 the district has become a lawless and anarchic Combat Zone,[2] no longer considered part...",
+  "subdistricts": [
+    "Coastview",
+    "Dogtown",
+    "West Wind Estate"
+  ],
+  "danger_level": null,
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Pacifica_%282077%29",
+  "has_images": true
+}

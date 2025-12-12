@@ -1,0 +1,14 @@
+{
+  "name": "Barghest",
+  "description": "BARGHEST is a militia and gang operating in Night City. They are based out of Dogtown. Originally consisting of Militech soldiers, BARGHEST declared its independence from the corporation after Colonel Kurt Hansen claimed a large portion of Night City's Pacifica district for himself during the Unification War. This area would later be now known as Dogtown.[1][2] Originally made up of veterans who fought alongside Hansen during the war, over the years, mercenaries and other veterans joined...",
+  "territory": "Night City (Pacifica)",
+  "hq": "Black Sapphire, Dogtown",
+  "founder": "Kurt Hansen",
+  "leader": "See Leadership",
+  "members_count": null,
+  "affiliations": [
+    "Militech"
+  ],
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Barghest",
+  "has_images": true
+}

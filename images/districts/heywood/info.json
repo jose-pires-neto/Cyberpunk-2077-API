@@ -1,0 +1,14 @@
+{
+  "name": "Heywood",
+  "description": "Heywood is a neighborhood of contrast—from modern skyscrapers and parks in the north, to dangerous, inhospitable slums in the south. It's \"the biggest bedroom in Night City,\" where gangs like Valentinos and 6th Street get down to business—legal and illegal alike.[1]Cyberpunk 2077 Heywood is one of the major districts of Night City, located in the central portion of the metropolis. In 2077, Heywood is seen as a district of complete contrasts. The north borders the City Center and is where...",
+  "subdistricts": [
+    "The Glen",
+    "Vista del Rey",
+    "Wellsprings",
+    "Moto Cielo",
+    "Welles' House"
+  ],
+  "danger_level": null,
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Heywood_%282077%29",
+  "has_images": true
+}

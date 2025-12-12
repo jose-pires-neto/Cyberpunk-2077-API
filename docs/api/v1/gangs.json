@@ -1,1 +1,229 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "6th Street",
+    "directory": "6th_street",
+    "description": "6th Street is a gang operating in Night City. During the 2070s, the uniforms of 6th Street gangers were heavily influenced by military and patriotic accents: military boots, tactical vests and knee pads, cargo pants, baseball caps with NUSA flags, stars, stripes, and eagles. Cyberware used by the gang included cyberoptics, pain editors, and health monitors.[2] They were supplied by Militech and Kendachi. The gang consisted of about 2,300 members by 2077. 6th Street was formed about fifty...",
+    "founder": "Solomon Wright",
+    "leader": "See Leadership",
+    "hq": "The Armory (2045)Arroyo HQ (2077)",
+    "territory": "Night City (Santo Domingo, Heywood, Westbrook)",
+    "affiliations": [
+      "Combat Cab",
+      "Militech",
+      "Kendachi",
+      "FIA"
+    ],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/6th_Street",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/6th_street/6th_street_08.png"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Aldecaldos",
+    "directory": "aldecaldos",
+    "description": "The Aldecaldos are one of the largest nomad groups in North America, and a member of the Seven Nations. The Aldecaldo family was the first true nomad family to form during the 1990s as Los Angeles turned into a warzone. Juan Aldecaldo started out in the defense industry, and much of the extended Aldecaldo family depended on Juan for various needs. Juan led a family migration from the US to Mexico City, and as time went on his leadership became stronger. The Aldecaldos returned to the US with...",
+    "founder": "Juan Aldecaldo",
+    "leader": "See Leadership",
+    "territory": "North America",
+    "affiliations": [
+      "Seven Nations"
+    ],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Aldecaldos",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_05.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_07.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/aldecaldos/aldecaldos_08.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Animals",
+    "directory": "animals",
+    "description": "The Animals are a gang operating in Night City. During the 2070s, the Animals were an aggressive street-fighting gang without permanent turf in Night City, but who put emphasis on physical power above all else. They were known for eschewing traditional cyberware in favor custom-brewed body enchantments such as ultra-testosterone and animal supplements (including equine growth hormones) in order to make themselves bigger and stronger. Despite being considered purists by some, they were not...",
+    "leader": "See Leadership",
+    "hq": "N/A",
+    "territory": "Night City",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Animals",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/animals/animals_08.png"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Barghest",
+    "directory": "barghest",
+    "description": "BARGHEST is a militia and gang operating in Night City. They are based out of Dogtown. Originally consisting of Militech soldiers, BARGHEST declared its independence from the corporation after Colonel Kurt Hansen claimed a large portion of Night City's Pacifica district for himself during the Unification War. This area would later be now known as Dogtown.[1][2] Originally made up of veterans who fought alongside Hansen during the war, over the years, mercenaries and other veterans joined...",
+    "founder": "Kurt Hansen",
+    "leader": "See Leadership",
+    "hq": "Black Sapphire, Dogtown",
+    "territory": "Night City (Pacifica)",
+    "affiliations": [
+      "Militech"
+    ],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Barghest",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/barghest/barghest_01.png"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Maelstrom",
+    "directory": "maelstrom",
+    "description": "The Maelstrom are a gang operating in Night City. During the 2070s, Maelstrom was fascinated with cybertechnologies and the Net. Its members frequently underwent extensive illegal body modifications, with many on the edge of developing cyberpsychosis, or already suffering from it. Their physical appearance was distinguished by their dehumanizing heavy cyberware augmentations and occult-inspired tattoos.[1] Maelstrom's territory was in the industrial part of Watson. Deeply obsessed with...",
+    "founder": "Hammer",
+    "leader": "See Leadership",
+    "hq": "Barley's (2020)Burleson Tower (2045)Totentanz's Building (2077)",
+    "territory": "Night City (Watson)",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Maelstrom",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/maelstrom/maelstrom_08.png"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Moxes",
+    "directory": "moxes",
+    "description": "The Mox, also known as the Moxes, are a gang operating in Night City. During the 2070s, the Mox were a small gang based out of Lizzie's Bar in Kabuki. They were made up of outcasts of different backgrounds in Night City, mostly sex workers, anarchists, punks, and sexual minorities. Formed in the interest of mutual self-defense purposes, their name came from the old slang term \"moxie,\" denoting their determination to stand up against their oppressors. One of their emblems was \"Moxes\" written...",
+    "leader": "See Leadership",
+    "hq": "Lizzie's Bar",
+    "territory": "Night City (Watson, Westbrook)",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Moxes",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/moxes/moxes_01.png"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Scavengers",
+    "directory": "scavengers",
+    "description": "The Scavengers, also known as Scavs, are an organization made of multiple groups operating in Night City. They are known for kidnapping people and forcibly harvesting their cyberware. Scavengers can be found all over Night City. They deal in selling to the black market cyberware forcefully ripped from their unsuspected victims. They are ruthless and care little for anyone else around them. Members speak European languages and have some Russian graffiti, and listen to Russian music.[2...",
+    "territory": "Night City",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Scavengers",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/scavengers/scavengers_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/scavengers/scavengers_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/scavengers/scavengers_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/scavengers/scavengers_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/scavengers/scavengers_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/scavengers/scavengers_06.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Tyger Claws",
+    "directory": "tyger_claws",
+    "description": "The Tyger Claws (虎鉤衆) are a gang operating in Night City. During the 2070s, the Tyger Claws were ruthless territorial gang based in Japantown. They were one of the largest gangs in Night City with a number of approximately 5,500 members in 2077. Tyger foot soldiers were easily recognized by their Asian luminous tattoos, fast street bikes, katanas, and tantos. Cyberware used by the gang included reflex boosters, augmented cyberlimbs, pain editors, and electronic countermeasures (ECM) systems...",
+    "leader": "See Leadership",
+    "hq": "Japantown streets (2020)Kabuki Theater (2045)Japantown HQ (2077)",
+    "territory": "Night City (Westbrook, Watson)",
+    "affiliations": [
+      "Arasaka",
+      "NCCS"
+    ],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Tyger_Claws",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_05.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/tyger_claws/tyger_claws_08.png"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Valentinos",
+    "directory": "valentinos",
+    "description": "The Valentinos are a gang operating in Night City. During the 2070s, the Valentinos were based out of Heywood in central Night City. They were one of the largest gangs in the metropolis, with a membership of about 6,000 in 2077. Strictly territorial, they operated in the vast impoverished Latino barrios in the Glen, Vista del Rey, and Wellsprings, where they were strongly rooted in the local communities. They were representatives of the Chicano culture of Night City and had cultivated those...",
+    "leader": "See Leadership",
+    "hq": "Unknown",
+    "territory": "Night City (Heywood)",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Valentinos",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/valentinos/valentinos_08.png"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Voodoo Boys",
+    "directory": "voodoo_boys",
+    "description": "The Voodoo Boys do not call themselves by that name. It was given to them by others based on superficial similarities to an early twenty-first century gang of drug dealers. For this original gang, the \"voodoo\" stuff was just a pose, a lark. For the 2077 gang, their religion is a deadly serious matter.Description The Voodoo Boys (real name unknown) are a gang operating in Night City. What in the 2070s was known as the Voodoo Boys originate from Haiti. In 2062, climate change wiped Haiti off...",
+    "leader": "See Leadership",
+    "hq": "Batty's HotelEventide (2077)",
+    "territory": "Haiti (formerly) Night City (Pacifica)",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Voodoo_Boys",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/voodoo_boys/voodoo_boys_08.png"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Wraiths",
+    "directory": "wraiths",
+    "description": "The Wraiths are a group of Raffen Shiv nomads featured in the Cyberpunk universe. The Wraiths are the largest group of Raffen Shiv, or rogue nomads. This group mostly travels at night, preying on the sleeping and unwary. Their leader is named Dogkiller, and is rumored to wear clothing of human skin.[2] The Wraiths are one of the two prominent nomad groups inhabiting the Badlands. They have a long history of frequent conflict and warring with the other nomad group, the Aldecaldos.[3] While...",
+    "leader": "See Leadership",
+    "territory": "North America",
+    "affiliations": [],
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Wraiths",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_07.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/gangs/wraiths/wraiths_08.png"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "Tyger Claws",
+  "description": "The Tyger Claws (虎鉤衆) are a gang operating in Night City. During the 2070s, the Tyger Claws were ruthless territorial gang based in Japantown. They were one of the largest gangs in Night City with a number of approximately 5,500 members in 2077. Tyger foot soldiers were easily recognized by their Asian luminous tattoos, fast street bikes, katanas, and tantos. Cyberware used by the gang included reflex boosters, augmented cyberlimbs, pain editors, and electronic countermeasures (ECM) systems...",
+  "territory": "Night City (Westbrook, Watson)",
+  "hq": "Japantown streets (2020)Kabuki Theater (2045)Japantown HQ (2077)",
+  "founder": null,
+  "leader": "See Leadership",
+  "members_count": null,
+  "affiliations": [
+    "Arasaka",
+    "NCCS"
+  ],
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Tyger_Claws",
+  "has_images": true
+}

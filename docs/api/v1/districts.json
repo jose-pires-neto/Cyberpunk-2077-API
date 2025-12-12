@@ -1,1 +1,355 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "Badlands",
+    "directory": "badlands",
+    "description": "Sparsely populated by nomads, the Badlands are the vast plains outside of the city proper. Unchecked resource extraction, burning oil fields, rampant pollution; this region makes Night City feel like a rich oasis. But it holds golden opportunities for those in the know.[1]Cyberpunk 2077 The Badlands is a vast arid region that extends across the states of Northern and Southern California, on the West Coast of North America. This desert surrounds most of Night City. These vast plains outside...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Badlands",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_07.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_08.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/badlands/badlands_09.jpg"
+    ],
+    "subdistricts": []
+  },
+  {
+    "id": 2,
+    "name": "City Center",
+    "directory": "city_center",
+    "description": "City Center is one of the major districts of Night City, located in the central portion of the metropolis. City Center is the central business district (CBD) of Night City, the biggest commercial hub of the metropolitan area. Many of the city's corporations operate from here. This district is the real showcase of Night City; the once smoldering battlefield of the Fourth Corporate War and nuclear fallout from the AHQ Disaster. Restoration of the district was a lengthy and costly process, but...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/City_Center_%282077%29",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/city_center_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/city_center_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/city_center_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/city_center_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/city_center_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/city_center_06.png"
+    ],
+    "subdistricts": [
+      {
+        "name": "Corporate Center",
+        "description": "Corporate Plaza[1] (also known as Corpo Plaza[2] or Corporate Center[1]) is one of the sub-districts of City Center, located in central Night City. Corporate Plaza once stood as the crowning jewel of Night City, where some of the most powerful corporations maintained their global and regional headquarters. During the Fourth Corporate War, this plaza became a battlefield between Arasaka and Militech, which ended with its destruction during the AHQ Disaster of 2023, when a nuclear device was...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Corporate_Center_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_03.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_04.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_05.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_06.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_07.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_08.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_09.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/corporate_center/corporate_center_10.png"
+        ]
+      },
+      {
+        "name": "Downtown",
+        "description": "Downtown is one of the sub-districts of City Center, located in central Night City. After the Fourth Corporate War, an effort was made to rebuild this area of Night City along Western European architecture. Known as Little Europe during the Time of the Red, this district became a booming city section in development and a major center of population due to the loss of the neighboring City & Corporate Districts during the AHQ Disaster. However, necessity and budget concerns soon began to...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Downtown",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/downtown/downtown_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/downtown/downtown_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/downtown/downtown_03.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/city_center/subdistricts/downtown/downtown_04.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dogtown",
+    "directory": "dogtown",
+    "description": "Dogtown is a Combat Zone and one of the sub-districts of Pacifica, located in southern Night City. Before the creation of Dogtown, this area was known as Serenisands. Dogtown is exclusive to Cyberpunk 2077: Phantom Liberty and will become accessible during the quest Dog Eat Dog. Dogtown is a walled-off area located east of the Pacifica sub-districts of Coastview and West Wind Estate.[2] It is divided into different areas including Longshore Stacks, Golden Pacific, Luxor Heights, Terra...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Dogtown",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/dogtown/dogtown_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/dogtown/dogtown_02.png"
+    ],
+    "subdistricts": []
+  },
+  {
+    "id": 4,
+    "name": "Heywood",
+    "directory": "heywood",
+    "description": "Heywood is a neighborhood of contrast—from modern skyscrapers and parks in the north, to dangerous, inhospitable slums in the south. It's \"the biggest bedroom in Night City,\" where gangs like Valentinos and 6th Street get down to business—legal and illegal alike.[1]Cyberpunk 2077 Heywood is one of the major districts of Night City, located in the central portion of the metropolis. In 2077, Heywood is seen as a district of complete contrasts. The north borders the City Center and is where...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Heywood_%282077%29",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/heywood_07.jpg"
+    ],
+    "subdistricts": [
+      {
+        "name": "Moto Cielo",
+        "description": "Moto Cielo is located in the Heywood district of central Night City. Moto Cielo is a location in Heywood controlled by the Valentinos.[1] Many years prior to 2071, Valentino priest Sebastian Ibarra was caught in a bloodbath in Moto Cielo. After surviving, he found what he considered a noble calling, becoming a fixer of Night City.[2] \"Moto Cielo\" in Spanish can be translated into \"Bike Heaven\" in English. Despite making sense in English, in Spanish it would be more accurate to write it as...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Moto_Cielo",
+        "images": []
+      },
+      {
+        "name": "The Glen",
+        "description": "The Glen is one of the sub-districts of Heywood, located in central Night City. During the rebuilding period of Night City, around a decade after the Fourth Corporate War, the City Council struck a deal with the corporations to aid and fund Night City's reconstruction. That project included the Glen, which was planned as the new seat of power for the central government.[1][2] The Glen's boundaries incorporated areas from South Night City, the University District, and Little Asia. Over the...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/The_Glen",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/the_glen/the_glen_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/the_glen/the_glen_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/the_glen/the_glen_03.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/the_glen/the_glen_04.jpg"
+        ]
+      },
+      {
+        "name": "Vista del Rey",
+        "description": "Vista Del Rey (English: View of the King or King's View) is one of the sub-districts of Heywood, located in central Night City. After the Fourth Corporate War, this part of Night City turned into a Combat Zone. Most of the area was occupied by the old Little China and Japantown, though most of its originals residents had already moved out to other parts of the city. The original Heywood was in a different location to the southeast, packed with refugees and divided between a poorer south area...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Vista_del_Rey",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/vista_del_rey/vista_del_rey_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/vista_del_rey/vista_del_rey_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/vista_del_rey/vista_del_rey_03.png"
+        ]
+      },
+      {
+        "name": "Wellsprings",
+        "description": "Wellsprings is one of the sub-districts of Heywood, located in central Night City. During the 2070s, Heywood was considered a district of contrasts, and none exemplified this more than Wellsprings, a sub-district occupying Heywood's western neighborhoods.[1] This was a relatively safe area, at least on the sides bordering with City Center. Buildings in the northern parts of the sub-district were newer and modern, erected late in the rebuilding of Night City during the 2060s. These...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Wellsprings",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/wellsprings/wellsprings_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/heywood/subdistricts/wellsprings/wellsprings_02.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pacifica",
+    "directory": "pacifica",
+    "description": "Pacifica is one of the major districts of Night City, located in the southern portion of the metropolis. Pacifica was originally envisioned as Night City's vacation resort for the ultra-wealthy. It was to be true paradise, catering to corporate employees and tourists alike and with Militech security contractors protecting its golden sandy beaches, luxurious hotels, and unmatched entertainment.[1] By 2077 the district has become a lawless and anarchic Combat Zone,[2] no longer considered part...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Pacifica_%282077%29",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_05.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_06.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_07.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_08.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_09.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/pacifica_10.jpg"
+    ],
+    "subdistricts": [
+      {
+        "name": "Coastview",
+        "description": "Coastview is a Combat Zone and one of the sub-districts of Pacifica, located in southern Night City. By 2070, during the time the Unification War ended, some of the previous investors attempted to restart the Pacifica project. They were not welcomed by the local community that had taken over the sub-districts and adopted them into favelas. Corporate workers tried to clear the construction area of squatters, but were met with great resistance from the Voodoo Boys. Attempts were made by the...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Coastview_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/subdistricts/coastview/coastview_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/subdistricts/coastview/coastview_02.png"
+        ]
+      },
+      {
+        "name": "Dogtown",
+        "description": "Dogtown is a Combat Zone and one of the sub-districts of Pacifica, located in southern Night City. Before the creation of Dogtown, this area was known as Serenisands. Dogtown is exclusive to Cyberpunk 2077: Phantom Liberty and will become accessible during the quest Dog Eat Dog. Dogtown is a walled-off area located east of the Pacifica sub-districts of Coastview and West Wind Estate.[2] It is divided into different areas including Longshore Stacks, Golden Pacific, Luxor Heights, Terra...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Dogtown",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/subdistricts/dogtown/dogtown_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/subdistricts/dogtown/dogtown_02.png"
+        ]
+      },
+      {
+        "name": "West Wind Estate",
+        "description": "West Wind Estate is a Combat Zone and one of the sub-districts of Pacifica, located in southern Night City. By 2070, around the end of the Unification War, some of the prior investors attempted to restart the Pacifica project. They were not welcomed by the local community, who had taken over the sub-districts and turned them into favelas. Corporate workers tried to clear the construction area of squatters, but were met with great resistance from the Voodoo Boys. Eviction attempts made by the...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/West_Wind_Estate",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/subdistricts/west_wind_estate/west_wind_estate_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/pacifica/subdistricts/west_wind_estate/west_wind_estate_02.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Santo Domingo",
+    "directory": "santo_domingo",
+    "description": "Santo Domingo is one of Night City's oldest districts. Corporations use it as a testing ground for industrial projects, destroying old factories just to build new ones, while residents scrape a desperate living in crowded megabuildings — wishing for something better.Cyberpunk 2077 Santo Domingo (English: Saint Dominic) is one of the six districts of Night City in Cyberpunk 2077. This district originates from the old Heywood, which by the 2040s was already being called Santo Domingo.[1] As...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Santo_Domingo_%282077%29",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_07.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/santo_domingo_08.png"
+    ],
+    "subdistricts": [
+      {
+        "name": "Arroyo",
+        "description": "Arroyo (English: Stream or Creek) is one of the sub-districts of Santo Domingo, located in southeastern Night City. The Arroyo sub-district is always under constant construction, and in 2077 it consists of an old-fashioned power plant, robot factories, a logistics center, and a gigantic junkyard. Not every corporate investment has turned out to be profitable, and a significant number of buildings in this area are unfinished, either partially constructed or simply laying in complete ruin. All...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Arroyo",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/subdistricts/arroyo/arroyo_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/subdistricts/arroyo/arroyo_02.png"
+        ]
+      },
+      {
+        "name": "Rancho Coronado",
+        "description": "Rancho Coronado is one of the sub-districts of Santo Domingo, located in southeastern Night City. Rancho Coronado appears as a self-sufficient town within Night City. The corporations who own the Arroyo factories planned and advertised it as a place for their workers to live out the real American dream. Rancho Coronado consists almost solely of identical houses, reminiscent of the ones seen in mid twentieth century American suburbs. The district has its own bars, shops, school, park...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Rancho_Coronado_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/subdistricts/rancho_coronado/rancho_coronado_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/subdistricts/rancho_coronado/rancho_coronado_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/subdistricts/rancho_coronado/rancho_coronado_03.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/santo_domingo/subdistricts/rancho_coronado/rancho_coronado_04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Watson",
+    "directory": "watson",
+    "description": "Watson is one of the major districts of Night City, located in the northern portion of the metropolis. In 2077, Watson is seen as a sad and desperate place. It is well known as one of Night City's poorest districts, with many industrial factories and plants being completely abandoned. Watson is also the battleground in the war between Maelstrom and Tyger Claws gangs. The former reigns over the Northside Industrial District (NID), which consists of derelict factories and working-class...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Watson_%282077%29",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_07.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_08.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_09.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/watson_10.jpg"
+    ],
+    "subdistricts": [
+      {
+        "name": "Arasaka Waterfront",
+        "description": "The Arasaka Waterfront is a port and one of the sub-districts of Watson, located in northern Night City. The Waterfront is the bulwarked island of the corporate authority in the lawless lands of Watson. Unless you are an Arasaka employee, you are not welcome at all. The Arasaka Waterfront is an important link in the corporation's local supply chain. Official data states that hundreds of shipments come through the Waterfront every month, packed and sorted by automated robots to be sent to...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Arasaka_Waterfront",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_03.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_04.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_05.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_06.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_07.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_08.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_09.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/arasaka_waterfront/arasaka_waterfront_10.jpg"
+        ]
+      },
+      {
+        "name": "Kabuki",
+        "description": "Kabuki is one of the sub-districts of Watson, located in northern Night City. Kabuki was once the pride of the Japanese medical corporations in this part of Night City. It was adjacent to the famous Med Center, and as a result the whole area flourished and prospered. Nowadays, with all the other corpos either dissolved by Arasaka or transferred to the other bank of the gulf, Kabuki is possibly the poorest sub-district of the city outside of Pacifica. The area was quickly repopulated with...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Kabuki",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/kabuki/kabuki_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/kabuki/kabuki_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/kabuki/kabuki_03.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/kabuki/kabuki_04.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/kabuki/kabuki_05.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/kabuki/kabuki_06.png"
+        ]
+      },
+      {
+        "name": "Little China",
+        "description": "Little China is one of the sub-districts of Watson, located in northern Night City. Parts of Little China used to be an extension of Downtown, during the Rebuilding in the 2040s there were plans to make it a second City Center. The corporations built some skyscrapers and top-quality medical clinics known as the Med Center. It used to be the best place in Night City to spend money on body augmentations legally. In the late 2040s the sub-district flooded with Asian immigrants, mostly from...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Little_China_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/little_china/little_china_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/little_china/little_china_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/little_china/little_china_03.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/little_china/little_china_04.jpg"
+        ]
+      },
+      {
+        "name": "Northside",
+        "description": "The Northside Industrial District (NID), or simply Northside, is one of the sub-districts of Watson, located in northern Night City. Northside Industrial District (NID) was once Watson's prosperous factory sub-district. Nowadays its desolate and neglected, its factories are mostly non-functional and abandoned due to odd earthquake damage and a lack of investments by Japanese corporations that originally financed this area. New apartments blocks were built on the edge of the district to hide...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Northside_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/northside/northside_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/northside/northside_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/northside/northside_03.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/watson/subdistricts/northside/northside_04.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Westbrook",
+    "directory": "westbrook",
+    "description": "The Westbrook District of Night City is home to many wealthy elites, celebrities, and corporates. It is also home to Japantown, an especially important part of Night City for two reasons. The first being that it's the cultural center for the city's sizable Japanese community. The second is that it is home base for most of the Yakuza families operating throughout Northern California; it's centrally located, has limited police interference, and outsiders tend to stick out like a sore thumb...",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Westbrook_%282077%29",
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_05.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_06.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_07.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_08.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_09.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/westbrook_10.png"
+    ],
+    "subdistricts": [
+      {
+        "name": "Charter Hill",
+        "description": "Charter Hill is one of the sub-districts of Westbrook, located in eastern Night City. Charter Hill is a relatively new and well maintained corporate district that was built from scratch during the Rebuilding period. It quickly became very popular among the upper-class citizens of Night City, this was before North Oak became hot within the next two decades. Nevertheless, most aspiring mid-level corpos work from sunrise to sunset in Westbrook or City Center, to then party in Japantown after a...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Charter_Hill_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/charter_hill/charter_hill_01.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/charter_hill/charter_hill_02.png"
+        ]
+      },
+      {
+        "name": "Japantown",
+        "description": "Japantown is one of the sub-districts of Westbrook, located in eastern Night City. Primarily inhabited by people of Japanese descent, Japantown during daytime is usually crowded with tourists for whom the many bars, fancy restaurants, gaming parlors, the Cherry Blossom Market, and Shinto temple are mandatory destinations in Night City. Here one can also find the many love hotels, kyabakuras and hostess clubs whose lights glow in thick abundance along Japantown's streets. Clean and safe by...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/Japantown_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_03.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_04.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_05.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_06.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_07.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_08.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_09.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/japantown/japantown_10.jpg"
+        ]
+      },
+      {
+        "name": "North Oak",
+        "description": "North Oak is one of the sub-districts of Westbrook, located in eastern Night City. North Oak is the newest part of Night City. It's the exclusive residential district, free from the poverty and gangs that plague the city. More than 50 years ago, there was nothing here than arid hills framing the north-eastern border of Night City. After the nuke Incident and the destruction of the Arasaka Towers complex, it became the site of temporary refugee camps and favelas for the next 25 years. This...",
+        "wiki_url": "https://cyberpunk.fandom.com/wiki/North_Oak_%282077%29",
+        "images": [
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_01.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_02.png",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_03.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_04.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_05.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_06.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_07.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_08.jpg",
+          "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/districts/westbrook/subdistricts/north_oak/north_oak_09.png"
+        ]
+      }
+    ]
+  }
+]

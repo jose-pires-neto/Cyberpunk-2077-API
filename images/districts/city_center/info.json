@@ -1,0 +1,11 @@
+{
+  "name": "City Center",
+  "description": "City Center is one of the major districts of Night City, located in the central portion of the metropolis. City Center is the central business district (CBD) of Night City, the biggest commercial hub of the metropolitan area. Many of the city's corporations operate from here. This district is the real showcase of Night City; the once smoldering battlefield of the Fourth Corporate War and nuclear fallout from the AHQ Disaster. Restoration of the district was a lengthy and costly process, but...",
+  "subdistricts": [
+    "Corporate Center",
+    "Downtown"
+  ],
+  "danger_level": null,
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/City_Center_%282077%29",
+  "has_images": true
+}

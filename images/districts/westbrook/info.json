@@ -1,0 +1,12 @@
+{
+  "name": "Westbrook",
+  "description": "The Westbrook District of Night City is home to many wealthy elites, celebrities, and corporates. It is also home to Japantown, an especially important part of Night City for two reasons. The first being that it's the cultural center for the city's sizable Japanese community. The second is that it is home base for most of the Yakuza families operating throughout Northern California; it's centrally located, has limited police interference, and outsiders tend to stick out like a sore thumb...",
+  "subdistricts": [
+    "Charter Hill",
+    "Japantown",
+    "North Oak"
+  ],
+  "danger_level": null,
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/Westbrook_%282077%29",
+  "has_images": true
+}

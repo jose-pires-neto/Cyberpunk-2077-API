@@ -1,0 +1,17 @@
+{
+  "name": "6th Street",
+  "description": "6th Street is a gang operating in Night City. During the 2070s, the uniforms of 6th Street gangers were heavily influenced by military and patriotic accents: military boots, tactical vests and knee pads, cargo pants, baseball caps with NUSA flags, stars, stripes, and eagles. Cyberware used by the gang included cyberoptics, pain editors, and health monitors.[2] They were supplied by Militech and Kendachi. The gang consisted of about 2,300 members by 2077. 6th Street was formed about fifty...",
+  "territory": "Night City (Santo Domingo, Heywood, Westbrook)",
+  "hq": "The Armory (2045)Arroyo HQ (2077)",
+  "founder": "Solomon Wright",
+  "leader": "See Leadership",
+  "members_count": null,
+  "affiliations": [
+    "Combat Cab",
+    "Militech",
+    "Kendachi",
+    "FIA"
+  ],
+  "wiki_url": "https://cyberpunk.fandom.com/wiki/6th_Street",
+  "has_images": true
+}

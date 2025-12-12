@@ -194,7 +194,7 @@
                         <span class="px-3 py-1 bg-cyber-green/20 text-cyber-green text-xs font-bold rounded">GET</span>
                         <code class="font-mono text-white">/gangs.json</code>
                     </div>
-                    <p class="text-gray-400">Retorna informações sobre as gangues de Night City.</p>
+                    <p class="text-gray-400">Retorna informações detalhadas sobre as gangues de Night City.</p>
                 </div>
                 <div class="p-6 bg-cyber-black/50">
                     <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Exemplo de Resposta</p>
@@ -202,10 +202,76 @@
   {
     "id": 1,
     "name": "Maelstrom",
-    "images": ["https://...images/gangs/maelstrom/logo.png"],
-    "description": "Gangue obcecada por cyberware..."
+    "directory": "maelstrom",
+    "description": "Gangue obcecada por cyberware...",
+    "founder": "Boz",
+    "leader": "Royce",
+    "hq": "Totentanz",
+    "territory": "Northside Industrial District",
+    "affiliations": ["Scavengers"],
+    "wiki_url": "https://cyberpunk.fandom.com/...",
+    "images": ["https://.../maelstrom_01.png"]
   }
 ]</code></pre>
+                </div>
+                <div class="p-6 border-t border-white/10">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Campos</p>
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="text-left text-gray-500 border-b border-white/10">
+                                <th class="pb-2">Campo</th>
+                                <th class="pb-2">Tipo</th>
+                                <th class="pb-2">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr>
+                                <td class="py-1 font-mono">id</td>
+                                <td>integer</td>
+                                <td>ID único</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">name</td>
+                                <td>string</td>
+                                <td>Nome da gangue</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">description</td>
+                                <td>string</td>
+                                <td>Descrição</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">founder</td>
+                                <td>string</td>
+                                <td>(opcional) Fundador</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">leader</td>
+                                <td>string</td>
+                                <td>(opcional) Líder atual</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">hq</td>
+                                <td>string</td>
+                                <td>(opcional) Quartel-general</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">territory</td>
+                                <td>string</td>
+                                <td>(opcional) Território</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">affiliations</td>
+                                <td>array</td>
+                                <td>(opcional) Afiliações</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">images</td>
+                                <td>array</td>
+                                <td>URLs das imagens</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
 
@@ -216,7 +282,7 @@
                         <span class="px-3 py-1 bg-cyber-green/20 text-cyber-green text-xs font-bold rounded">GET</span>
                         <code class="font-mono text-white">/districts.json</code>
                     </div>
-                    <p class="text-gray-400">Retorna os distritos de Night City.</p>
+                    <p class="text-gray-400">Retorna os distritos de Night City com subdistritos aninhados.</p>
                 </div>
                 <div class="p-6 bg-cyber-black/50">
                     <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Exemplo de Resposta</p>
@@ -224,12 +290,86 @@
   {
     "id": 1,
     "name": "Watson",
-    "images": ["https://...images/districts/watson/view.png"],
-    "description": "Distrito decadente no norte..."
+    "description": "Distrito decadente no norte...",
+    "danger_level": "Moderate",
+    "wiki_url": "https://cyberpunk.fandom.com/...",
+    "images": ["https://.../watson_01.png"],
+    "subdistricts": [
+      {
+        "name": "Kabuki",
+        "description": "Área com mercado de rua...",
+        "images": ["https://.../kabuki_01.png"]
+      }
+    ]
   }
 ]</code></pre>
                 </div>
+                <div class="p-6 border-t border-white/10">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Campos do Distrito</p>
+                    <table class="w-full text-sm mb-6">
+                        <thead>
+                            <tr class="text-left text-gray-500 border-b border-white/10">
+                                <th class="pb-2">Campo</th>
+                                <th class="pb-2">Tipo</th>
+                                <th class="pb-2">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr>
+                                <td class="py-1 font-mono">id</td>
+                                <td>integer</td>
+                                <td>ID único</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">name</td>
+                                <td>string</td>
+                                <td>Nome do distrito</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">description</td>
+                                <td>string</td>
+                                <td>Descrição</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">danger_level</td>
+                                <td>string</td>
+                                <td>(opcional) Nível de perigo</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">images</td>
+                                <td>array</td>
+                                <td>URLs das imagens</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">subdistricts</td>
+                                <td>array</td>
+                                <td>Lista de subdistritos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Campos do Subdistrito</p>
+                    <table class="w-full text-sm">
+                        <tbody class="text-gray-300">
+                            <tr>
+                                <td class="py-1 font-mono">name</td>
+                                <td>string</td>
+                                <td>Nome do subdistrito</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">description</td>
+                                <td>string</td>
+                                <td>(opcional) Descrição</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono">images</td>
+                                <td>array</td>
+                                <td>URLs das imagens</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
+
 
             <!-- Affiliations -->
             <section class="bg-cyber-dark border border-white/10 rounded-lg overflow-hidden">
