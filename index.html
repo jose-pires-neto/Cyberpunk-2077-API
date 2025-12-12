@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk 2077 API - Night City Database</title>
+    <meta name="description"
+        content="A primeira e mais completa API do jogo Cyberpunk 2077. Acesse dados de personagens, gangues, distritos e muito mais.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-yellow': '#fcee0a',
+                        'cyber-black': '#0a0a0f',
+                        'cyber-dark': '#121218',
+                        'cyber-cyan': '#00f0ff',
+                        'cyber-magenta': '#ff00ff',
+                        'cyber-red': '#ff3366',
+                        'cyber-green': '#39ff14',
+                    },
+                    fontFamily: {
+                        'display': ['Orbitron', 'sans-serif'],
+                        'body': ['Rajdhani', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0f;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #fcee0a;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f0ff;
+        }
+
+        /* Masonry Grid */
+        .masonry {
+            column-count: 2;
+            column-gap: 16px;
+        }
+
+        @media (min-width: 640px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .masonry {
+                column-count: 4;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .masonry {
+                column-count: 5;
+            }
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+
+        /* Glitch Effect */
+        @keyframes glitch {
+
+            0%,
+            100% {
+                clip-path: inset(0 0 0 0);
+                transform: translate(0);
+            }
+
+            20% {
+                clip-path: inset(20% 0 60% 0);
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                clip-path: inset(40% 0 40% 0);
+                transform: translate(2px, -2px);
+            }
+
+            60% {
+                clip-path: inset(60% 0 20% 0);
+                transform: translate(-1px, 1px);
+            }
+
+            80% {
+                clip-path: inset(80% 0 0 0);
+                transform: translate(1px, -1px);
+            }
+        }
+
+        .glitch:hover {
+            animation: glitch 0.3s ease-in-out;
+        }
+
+        /* Neon Glow */
+        .neon-text {
+            text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 40px currentColor;
+        }
+
+        .neon-border {
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.5), inset 0 0 10px rgba(0, 240, 255, 0.1);
+        }
+
+        /* Card Hover */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 240, 255, 0.3);
+        }
+
+        /* Scanline Effect */
+        .scanlines::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0, 0, 0, 0.1) 2px,
+                    rgba(0, 0, 0, 0.1) 4px);
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Slide animation for sidebar */
+        .sidebar-enter {
+            transform: translateX(-100%);
+        }
+
+        .sidebar-enter-active {
+            transform: translateX(0);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-cyber-black text-white font-body min-h-screen">
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-40 hidden lg:hidden" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar"
+        class="fixed left-0 top-0 h-full w-72 bg-cyber-dark border-r border-cyber-yellow/20 z-50 transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
+        <!-- Logo -->
+        <div class="p-6 border-b border-cyber-yellow/20">
+            <h1 class="font-display text-2xl font-black text-cyber-yellow tracking-wider">
+                CYBER<span class="text-cyber-cyan">PUNK</span>
+            </h1>
+            <p class="text-xs text-gray-500 tracking-widest mt-1">2077 API</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="p-4">
+            <ul class="space-y-2">
+                <li>
+                    <a href="#"
+                        class="nav-link active flex items-center gap-3 px-4 py-3 rounded-lg bg-cyber-yellow/10 text-cyber-yellow border border-cyber-yellow/30 hover:bg-cyber-yellow/20 transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span class="font-semibold">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('images')"
+                        class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-white/5 hover:text-cyber-cyan transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span class="font-semibold">Imagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('characters')"
+                        class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-white/5 hover:text-cyber-cyan transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span class="font-semibold">Personagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('gangs')"
+                        class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-white/5 hover:text-cyber-cyan transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span class="font-semibold">Gangues</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('districts')"
+                        class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-white/5 hover:text-cyber-cyan transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        <span class="font-semibold">Distritos</span>
+                    </a>
+                </li>
+
+                <li class="pt-4 mt-4 border-t border-white/10">
+                    <a href="docs.html"
+                        class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-white/5 hover:text-cyber-magenta transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <span class="font-semibold">Documentação</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="terms.html"
+                        class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-gray-400 hover:bg-white/5 hover:text-cyber-magenta transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                        <span class="font-semibold">Termos de Serviço</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10">
+            <p class="text-xs text-gray-500 text-center">
+                Criado pelo Netrunner <span class="text-cyber-cyan font-semibold">José P.</span>
+            </p>
+            <p class="text-xs text-gray-600 text-center mt-1">
+                © 2077 Night City Database <span class="text-cyber-yellow/50">v1.0.0</span>
+            </p>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="lg:ml-72 min-h-screen">
+        <!-- Header -->
+        <header class="sticky top-0 z-30 bg-cyber-black/90 backdrop-blur-md border-b border-cyber-yellow/20 px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleSidebar()"
+                    class="lg:hidden p-2 text-cyber-yellow hover:bg-cyber-yellow/10 rounded-lg transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Page Title -->
+                <div class="flex-1 lg:flex-none">
+                    <h2 id="page-title" class="font-display text-lg font-bold text-white tracking-wide">HOME</h2>
+                    <p id="page-subtitle" class="text-xs text-gray-500">Night City Database</p>
+                </div>
+
+                <!-- Stats -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <div class="text-right">
+                        <p class="text-xs text-gray-500">PERSONAGENS</p>
+                        <p id="stat-characters" class="font-display text-cyber-cyan font-bold">-</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xs text-gray-500">IMAGENS</p>
+                        <p id="stat-images" class="font-display text-cyber-magenta font-bold">-</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative overflow-hidden border-b border-cyber-yellow/20">
+            <div class="absolute inset-0 bg-gradient-to-br from-cyber-yellow/5 via-transparent to-cyber-cyan/5"></div>
+            <div class="relative px-6 py-12 md:py-20 max-w-4xl mx-auto text-center">
+                <h1 class="font-display text-4xl md:text-6xl font-black text-cyber-yellow mb-4 tracking-wider glitch">
+                    NIGHT CITY<br><span class="text-white">DATABASE</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                    A primeira e mais completa <span class="text-cyber-cyan font-semibold">API open-source</span> do
+                    jogo Cyberpunk 2077.
+                    Acesse dados de personagens, gangues e distritos.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="docs.html"
+                        class="px-8 py-3 bg-cyber-yellow text-cyber-black font-display font-bold tracking-wider hover:bg-cyber-cyan transition-colors">
+                        DOCUMENTAÇÃO
+                    </a>
+                    <a href="https://github.com/jose-pires-neto/Cyberpunk-2077-API" target="_blank"
+                        class="px-8 py-3 border-2 border-cyber-yellow text-cyber-yellow font-display font-bold tracking-wider hover:bg-cyber-yellow/10 transition-colors">
+                        GITHUB
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Area -->
+        <section id="content" class="p-4 md:p-6">
+            <!-- Shuffle Button -->
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="font-display text-xl font-bold text-white">
+                    <span class="text-cyber-cyan">//</span> GALERIA
+                </h3>
+                <button onclick="shuffleImages()"
+                    class="flex items-center gap-2 px-4 py-2 bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan rounded-lg hover:bg-cyber-cyan/20 transition-all">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <span class="font-semibold text-sm">SHUFFLE</span>
+                </button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div id="masonry-grid" class="masonry">
+                <!-- Cards will be injected here -->
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading" class="hidden text-center py-20">
+                <div
+                    class="inline-block w-12 h-12 border-4 border-cyber-yellow/30 border-t-cyber-yellow rounded-full animate-spin">
+                </div>
+                <p class="mt-4 text-gray-500">Carregando dados de Night City...</p>
+            </div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="hidden text-center py-20">
+                <p class="text-6xl mb-4">🌆</p>
+                <p class="text-gray-500">Nenhum dado encontrado.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Character Modal -->
+    <div id="character-modal" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div
+            class="absolute inset-4 md:inset-10 lg:inset-20 bg-cyber-dark border border-cyber-cyan/30 rounded-lg overflow-hidden flex flex-col scanlines">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between p-4 border-b border-cyber-cyan/20 bg-cyber-black/50">
+                <h3 id="modal-name" class="font-display text-xl md:text-2xl font-bold text-cyber-yellow"></h3>
+                <button onclick="closeModal()" class="p-2 text-gray-400 hover:text-cyber-red transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="flex-1 overflow-y-auto p-4 md:p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Images -->
+                    <div>
+                        <div id="modal-main-image" class="aspect-square bg-cyber-black rounded-lg overflow-hidden mb-4">
+                            <img src="" alt="" class="w-full h-full object-cover">
+                        </div>
+                        <div id="modal-thumbnails" class="flex gap-2 overflow-x-auto pb-2">
+                            <!-- Thumbnails -->
+                        </div>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Nome</p>
+                            <p id="modal-char-name" class="text-xl font-bold text-white"></p>
+                        </div>
+                        <div id="modal-gender-section">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Gênero</p>
+                            <p id="modal-gender" class="text-lg text-cyber-cyan"></p>
+                        </div>
+                        <div id="modal-affiliation-section">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Afiliação</p>
+                            <p id="modal-affiliation" class="text-lg text-cyber-magenta"></p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase tracking-wider mb-1">Descrição</p>
+                            <p id="modal-description" class="text-gray-300 leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Shuffle Button (Mobile) -->
+    <button onclick="shuffleImages()"
+        class="fixed bottom-6 right-6 lg:hidden w-14 h-14 bg-cyber-yellow text-cyber-black rounded-full shadow-lg hover:bg-cyber-cyan transition-colors z-30 flex items-center justify-center">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+    </button>
+
+    <script>
+        // ============================================
+        // API Configuration
+        // ============================================
+        const API_BASE = 'api/v1';
+
+        // State
+        let allCharacters = [];
+        let allImages = [];
+
+        // ============================================
+        // Initialization
+        // ============================================
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadData();
+            renderGallery();
+        });
+
+        async function loadData() {
+            showLoading(true);
+            try {
+                const response = await fetch(`${API_BASE}/characters.json`);
+                allCharacters = await response.json();
+
+                // Extract all images
+                allImages = [];
+                allCharacters.forEach(char => {
+                    if (char.images) {
+                        char.images.forEach(img => {
+                            allImages.push({ ...char, imageUrl: img });
+                        });
+                    }
+                });
+
+                updateStats();
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+            showLoading(false);
+        }
+
+        function updateStats() {
+            document.getElementById('stat-characters').textContent = allCharacters.length;
+            document.getElementById('stat-images').textContent = allImages.length;
+        }
+
+        // ============================================
+        // Gallery Rendering
+        // ============================================
+        function renderGallery() {
+            const grid = document.getElementById('masonry-grid');
+            const shuffled = shuffleArray([...allImages]);
+
+            if (shuffled.length === 0) {
+                document.getElementById('empty-state').classList.remove('hidden');
+                grid.innerHTML = '';
+                return;
+            }
+
+            document.getElementById('empty-state').classList.add('hidden');
+
+            grid.innerHTML = shuffled.map(item => `
+                <div class="masonry-item">
+                    <div onclick="openModal(${item.id})" class="card-hover cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-cyber-cyan/50 bg-cyber-dark group relative">
+                        <div class="relative overflow-hidden">
+                            <img src="${item.imageUrl}" alt="${item.name}" class="w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-cyber-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-cyber-black to-transparent">
+                            <p class="font-display text-sm font-bold text-white truncate">${item.name}</p>
+                            ${item.affiliation ? `<p class="text-xs text-cyber-cyan truncate">${item.affiliation}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function shuffleImages() {
+            const grid = document.getElementById('masonry-grid');
+            grid.style.opacity = '0';
+            grid.style.transform = 'translateY(20px)';
+
+            setTimeout(() => {
+                renderGallery();
+                grid.style.opacity = '1';
+                grid.style.transform = 'translateY(0)';
+            }, 300);
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // ============================================
+        // Modal
+        // ============================================
+        function openModal(characterId) {
+            const char = allCharacters.find(c => c.id === characterId);
+            if (!char) return;
+
+            document.getElementById('modal-name').textContent = char.name;
+            document.getElementById('modal-char-name').textContent = char.name;
+            document.getElementById('modal-description').textContent = char.description || 'Sem descrição disponível.';
+
+            // Gender
+            const genderSection = document.getElementById('modal-gender-section');
+            if (char.gender) {
+                genderSection.classList.remove('hidden');
+                document.getElementById('modal-gender').textContent = char.gender;
+            } else {
+                genderSection.classList.add('hidden');
+            }
+
+            // Affiliation
+            const affSection = document.getElementById('modal-affiliation-section');
+            if (char.affiliation && char.affiliation !== 'Unknown') {
+                affSection.classList.remove('hidden');
+                document.getElementById('modal-affiliation').textContent = char.affiliation;
+            } else {
+                affSection.classList.add('hidden');
+            }
+
+            // Main image
+            const mainImg = document.getElementById('modal-main-image').querySelector('img');
+            if (char.images && char.images.length > 0) {
+                mainImg.src = char.images[0];
+                mainImg.alt = char.name;
+            }
+
+            // Thumbnails
+            const thumbs = document.getElementById('modal-thumbnails');
+            thumbs.innerHTML = (char.images || []).map((img, i) => `
+                <button onclick="setMainImage('${img}')" class="flex-shrink-0 w-16 h-16 rounded overflow-hidden border-2 ${i === 0 ? 'border-cyber-cyan' : 'border-white/20'} hover:border-cyber-cyan transition-colors">
+                    <img src="${img}" alt="" class="w-full h-full object-cover">
+                </button>
+            `).join('');
+
+            document.getElementById('character-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function setMainImage(url) {
+            const mainImg = document.getElementById('modal-main-image').querySelector('img');
+            mainImg.src = url;
+
+            // Update thumbnail borders
+            document.querySelectorAll('#modal-thumbnails button').forEach(btn => {
+                const img = btn.querySelector('img');
+                if (img.src === url) {
+                    btn.classList.remove('border-white/20');
+                    btn.classList.add('border-cyber-cyan');
+                } else {
+                    btn.classList.add('border-white/20');
+                    btn.classList.remove('border-cyber-cyan');
+                }
+            });
+        }
+
+        function closeModal() {
+            document.getElementById('character-modal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // ============================================
+        // Sidebar
+        // ============================================
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('mobile-overlay');
+
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+        }
+
+        // ============================================
+        // Page Navigation
+        // ============================================
+        function loadPage(page) {
+            toggleSidebar();
+            // For now, just update title - can be expanded for SPA navigation
+            const titles = {
+                'images': 'IMAGENS',
+                'characters': 'PERSONAGENS',
+                'gangs': 'GANGUES',
+                'districts': 'DISTRITOS'
+            };
+            document.getElementById('page-title').textContent = titles[page] || 'HOME';
+        }
+
+        // ============================================
+        // Utilities
+        // ============================================
+        function showLoading(show) {
+            document.getElementById('loading').classList.toggle('hidden', !show);
+            document.getElementById('masonry-grid').classList.toggle('hidden', show);
+        }
+    </script>
+</body>
+
+</html>

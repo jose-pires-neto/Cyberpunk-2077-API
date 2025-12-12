@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Cyberpunk 2077 API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-yellow': '#fcee0a',
+                        'cyber-black': '#0a0a0f',
+                        'cyber-dark': '#121218',
+                        'cyber-cyan': '#00f0ff',
+                        'cyber-magenta': '#ff00ff',
+                        'cyber-red': '#ff3366',
+                        'cyber-green': '#39ff14',
+                    },
+                    fontFamily: {
+                        'display': ['Orbitron', 'sans-serif'],
+                        'body': ['Rajdhani', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0f;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #fcee0a;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #0a0a0f !important;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+
+<body class="bg-cyber-black text-white font-body min-h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-cyber-dark/95 backdrop-blur-md border-b border-cyber-yellow/20">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <span class="font-display text-xl font-black text-cyber-yellow">CYBERPUNK</span>
+                <span class="text-xs text-gray-500 border border-gray-700 px-2 py-0.5 rounded">API</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="index.html" class="text-gray-400 hover:text-cyber-cyan transition-colors">Home</a>
+                <a href="docs.html" class="text-cyber-yellow font-semibold">Docs</a>
+                <a href="terms.html" class="text-gray-400 hover:text-cyber-cyan transition-colors">Termos</a>
+                <a href="https://github.com/jose-pires-neto/Cyberpunk-2077-API" target="_blank"
+                    class="px-4 py-2 bg-cyber-yellow text-cyber-black font-bold text-sm hover:bg-cyber-cyan transition-colors">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Title -->
+        <div class="text-center mb-12">
+            <h1 class="font-display text-4xl md:text-5xl font-black text-cyber-yellow mb-4">DOCUMENTAÇÃO</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Guia completo para utilizar a API do Cyberpunk 2077. Todos os endpoints retornam dados em formato JSON.
+            </p>
+        </div>
+
+        <!-- Base URL -->
+        <div class="bg-cyber-dark border border-cyber-cyan/30 rounded-lg p-6 mb-8">
+            <h2 class="font-display text-lg font-bold text-cyber-cyan mb-2">Base URL</h2>
+            <code class="block bg-cyber-black p-4 rounded text-cyber-green font-mono text-sm">
+                https://jose-pires-neto.github.io/Cyberpunk-2077-API/api/v1/
+            </code>
+        </div>
+
+        <!-- Endpoints -->
+        <div class="space-y-8">
+            <!-- Characters -->
+            <section class="bg-cyber-dark border border-white/10 rounded-lg overflow-hidden">
+                <div class="p-6 border-b border-white/10">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="px-3 py-1 bg-cyber-green/20 text-cyber-green text-xs font-bold rounded">GET</span>
+                        <code class="font-mono text-white">/characters.json</code>
+                    </div>
+                    <p class="text-gray-400">Retorna a lista completa de personagens do jogo.</p>
+                </div>
+                <div class="p-6 bg-cyber-black/50">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Exemplo de Resposta</p>
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">[
+  {
+    "id": 1,
+    "name": "Vincent",
+    "gender": "Male",
+    "directory": "vincent",
+    "images": [
+      "https://...images/characters/sex/male/vincent/v01.png",
+      "https://...images/characters/sex/male/vincent/v02.png"
+    ],
+    "description": "V, um pseudônimo para Vincent/Valerie...",
+    "affiliation": "Mercenário"
+  }
+]</code></pre>
+                </div>
+                <div class="p-6 border-t border-white/10">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Campos</p>
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="text-left text-gray-500">
+                                <th class="pb-2">Campo</th>
+                                <th class="pb-2">Tipo</th>
+                                <th class="pb-2">Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-cyan">id</td>
+                                <td>number</td>
+                                <td>Identificador único</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-cyan">name</td>
+                                <td>string</td>
+                                <td>Nome do personagem</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-cyan">gender</td>
+                                <td>string</td>
+                                <td>Gênero (Male/Female)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-cyan">images</td>
+                                <td>array</td>
+                                <td>URLs das imagens</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-cyan">description</td>
+                                <td>string</td>
+                                <td>Biografia do personagem</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-cyan">affiliation</td>
+                                <td>string</td>
+                                <td>Gangue/Corporação/Profissão</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Gangs -->
+            <section class="bg-cyber-dark border border-white/10 rounded-lg overflow-hidden">
+                <div class="p-6 border-b border-white/10">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="px-3 py-1 bg-cyber-green/20 text-cyber-green text-xs font-bold rounded">GET</span>
+                        <code class="font-mono text-white">/gangs.json</code>
+                    </div>
+                    <p class="text-gray-400">Retorna informações sobre as gangues de Night City.</p>
+                </div>
+                <div class="p-6 bg-cyber-black/50">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Exemplo de Resposta</p>
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">[
+  {
+    "id": 1,
+    "name": "Maelstrom",
+    "images": ["https://...images/gangs/maelstrom/logo.png"],
+    "description": "Gangue obcecada por cyberware..."
+  }
+]</code></pre>
+                </div>
+            </section>
+
+            <!-- Districts -->
+            <section class="bg-cyber-dark border border-white/10 rounded-lg overflow-hidden">
+                <div class="p-6 border-b border-white/10">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="px-3 py-1 bg-cyber-green/20 text-cyber-green text-xs font-bold rounded">GET</span>
+                        <code class="font-mono text-white">/districts.json</code>
+                    </div>
+                    <p class="text-gray-400">Retorna os distritos de Night City.</p>
+                </div>
+                <div class="p-6 bg-cyber-black/50">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Exemplo de Resposta</p>
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">[
+  {
+    "id": 1,
+    "name": "Watson",
+    "images": ["https://...images/districts/watson/view.png"],
+    "description": "Distrito decadente no norte..."
+  }
+]</code></pre>
+                </div>
+            </section>
+
+            <!-- Affiliations -->
+            <section class="bg-cyber-dark border border-white/10 rounded-lg overflow-hidden">
+                <div class="p-6 border-b border-white/10">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="px-3 py-1 bg-cyber-green/20 text-cyber-green text-xs font-bold rounded">GET</span>
+                        <code class="font-mono text-white">/affiliations.json</code>
+                    </div>
+                    <p class="text-gray-400">Lista de afiliações disponíveis (gangues, corporações, profissões).</p>
+                </div>
+                <div class="p-6 bg-cyber-black/50">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-3">Exemplo de Resposta</p>
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">[
+  {
+    "id": "maelstrom",
+    "name": "Maelstrom",
+    "category": "gang",
+    "color": "#ff0000"
+  },
+  {
+    "id": "arasaka",
+    "name": "Arasaka",
+    "category": "corporation",
+    "color": "#ff0033"
+  }
+]</code></pre>
+                </div>
+            </section>
+        </div>
+
+        <!-- Usage Examples -->
+        <div class="mt-12 bg-cyber-dark border border-cyber-magenta/30 rounded-lg p-6">
+            <h2 class="font-display text-xl font-bold text-cyber-magenta mb-4">Exemplo de Uso</h2>
+            <div class="space-y-4">
+                <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">JavaScript (Fetch)</p>
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">fetch('https://jose-pires-neto.github.io/Cyberpunk-2077-API/api/v1/characters.json')
+  .then(response => response.json())
+  .then(data => console.log(data));</code></pre>
+                </div>
+                <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Python</p>
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">import requests
+
+url = "https://jose-pires-neto.github.io/Cyberpunk-2077-API/api/v1/characters.json"
+response = requests.get(url)
+data = response.json()
+print(data)</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rate Limits -->
+        <div class="mt-8 p-6 border border-cyber-yellow/30 rounded-lg">
+            <h2 class="font-display text-lg font-bold text-cyber-yellow mb-2">⚡ Rate Limits</h2>
+            <p class="text-gray-400">
+                Esta API é servida via GitHub Pages e não possui rate limits específicos.
+                No entanto, recomendamos fazer cache local dos dados para melhor performance.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 mt-20 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>Criado pelo Netrunner <span class="text-cyber-cyan font-semibold">José P.</span></p>
+            <p class="mt-2">© 2077 Night City Database. Projeto open-source.</p>
+            <p class="mt-2">
+                <a href="https://github.com/jose-pires-neto/Cyberpunk-2077-API"
+                    class="text-cyber-cyan hover:underline">GitHub</a>
+                <span class="mx-2">•</span>
+                <a href="terms.html" class="text-cyber-cyan hover:underline">Termos</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

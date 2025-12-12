@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Serviço - Cyberpunk 2077 API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-yellow': '#fcee0a',
+                        'cyber-black': '#0a0a0f',
+                        'cyber-dark': '#121218',
+                        'cyber-cyan': '#00f0ff',
+                        'cyber-magenta': '#ff00ff',
+                    },
+                    fontFamily: {
+                        'display': ['Orbitron', 'sans-serif'],
+                        'body': ['Rajdhani', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-cyber-black text-white font-body min-h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-cyber-dark/95 backdrop-blur-md border-b border-cyber-yellow/20">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <span class="font-display text-xl font-black text-cyber-yellow">CYBERPUNK</span>
+                <span class="text-xs text-gray-500 border border-gray-700 px-2 py-0.5 rounded">API</span>
+            </a>
+            <nav class="flex items-center gap-6">
+                <a href="index.html" class="text-gray-400 hover:text-cyber-cyan transition-colors">Home</a>
+                <a href="docs.html" class="text-gray-400 hover:text-cyber-cyan transition-colors">Docs</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="font-display text-4xl font-black text-cyber-yellow mb-8">TERMOS DE SERVIÇO</h1>
+
+        <div class="prose prose-invert max-w-none space-y-8 text-gray-300">
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">1. Aceitação dos Termos</h2>
+                <p>
+                    Ao acessar e utilizar a Cyberpunk 2077 API ("API"), você concorda em cumprir e estar vinculado
+                    a estes Termos de Serviço. Se você não concorda com qualquer parte destes termos, não deve
+                    utilizar esta API.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">2. Uso da API</h2>
+                <p>Esta API é fornecida gratuitamente para uso pessoal e educacional. Você pode:</p>
+                <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                    <li>Utilizar os dados em projetos pessoais</li>
+                    <li>Integrar a API em aplicações não-comerciais</li>
+                    <li>Fazer cache dos dados localmente</li>
+                    <li>Contribuir com melhorias via GitHub</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">3. Restrições</h2>
+                <p>Você <strong class="text-cyber-red">NÃO</strong> deve:</p>
+                <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+                    <li>Utilizar a API para fins comerciais sem autorização</li>
+                    <li>Redistribuir os dados como se fossem seus</li>
+                    <li>Realizar ataques de negação de serviço (DoS)</li>
+                    <li>Violar direitos autorais da CD Projekt Red</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">4. Propriedade Intelectual</h2>
+                <p>
+                    Cyberpunk 2077 é uma marca registrada da <strong>CD Projekt Red</strong>.
+                    Esta API é um projeto de fã não-oficial e não é endossada, patrocinada ou
+                    afiliada à CD Projekt Red.
+                </p>
+                <p class="mt-4">
+                    Todas as imagens, nomes de personagens, logotipos e outros conteúdos do jogo
+                    são propriedade da CD Projekt Red e são utilizados sob o princípio de fair use
+                    para fins educacionais e de preservação.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">5. Isenção de Responsabilidade</h2>
+                <p>
+                    Esta API é fornecida "como está", sem garantias de qualquer tipo.
+                    Não garantimos disponibilidade contínua, precisão dos dados ou
+                    compatibilidade com qualquer finalidade específica.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">6. Modificações</h2>
+                <p>
+                    Reservamo-nos o direito de modificar estes termos a qualquer momento.
+                    Mudanças significativas serão comunicadas através do repositório GitHub.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="font-display text-xl text-cyber-cyan mb-4">7. Contato</h2>
+                <p>
+                    Para dúvidas, sugestões ou reportar problemas, utilize a seção de
+                    <a href="https://github.com/jose-pires-neto/Cyberpunk-2077-API/issues"
+                        class="text-cyber-yellow hover:underline">Issues do GitHub</a>.
+                </p>
+            </section>
+        </div>
+
+        <div class="mt-12 p-6 bg-cyber-dark border border-cyber-yellow/30 rounded-lg">
+            <p class="text-center text-gray-400">
+                <span class="text-cyber-yellow font-display">Última atualização:</span> Dezembro 2024
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 mt-20 py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>Criado pelo Netrunner <span class="text-cyber-cyan font-semibold">José P.</span></p>
+            <p class="mt-2">© 2077 Night City Database</p>
+        </div>
+    </footer>
+</body>
+
+</html>
