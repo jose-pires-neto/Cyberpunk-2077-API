@@ -5,8 +5,8 @@
     "gender": "Male",
     "directory": "vincent",
     "images": [
-      "https://jose-pires-neto.github.io/Cyberpunk-2077-API//images/characters/sex/male/vincent/v01.png",
-      "https://jose-pires-neto.github.io/Cyberpunk-2077-API//images/characters/sex/male/vincent/v02.png"
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/vincent/v01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/vincent/v02.png"
     ],
     "description": "Personagem identificado em male/vincent",
     "affiliation": "Unknown"
