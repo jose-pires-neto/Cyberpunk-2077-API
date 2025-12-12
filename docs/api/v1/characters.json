@@ -1,15 +1,905 @@
 [
   {
     "id": 1,
-    "name": "Vincent",
+    "name": "Aaron McCarlson",
     "gender": "Male",
-    "directory": "vincent",
+    "directory": "aaron_mccarlson",
+    "has_images": true,
     "images": [
-      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/vincent/v01.png",
-      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/vincent/v02.png",
-      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/vincent/v03.png"
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aaron_mccarlson/aaron_mccarlson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aaron_mccarlson/aaron_mccarlson_02.png"
     ],
-    "description": "V, um pseudônimo para Vincent/Valerie, é um mercenário envolvido em uma série de eventos singulares durante o ano 2077, que abalou o equilíbrio de poder em Night City.\n\nV é o protagonista de Cyberpunk 2077. Seu gênero, aparência, atributos, vantagens e Rumo de Vida são todos personalizáveis pelo jogador ​​e influenciando bastante no enredo.",
-    "affiliation": "Mercenário"
+    "description": "Aaron McCarlsonis aNCPDsergeant and former associate ofRegina Jonesappearing inCyberpunk 2077. Aaron McCarlson serves anNCPDsergeant. While Aaron rose to become an influential officer, he was also notoriously corrupt. He was in contact with aValentinosmemberClaudio Morenoand persuaded him to murder his former superior, Dario Sanchez, after the latter left prison, making sure that the police would not interfere during the hit. Sometime in 2077 McCarlson became indebted to Dee, apparently his former love interest. Upon being reminded of his debt McCarlson met up with Dee but, instead of paying...",
+    "affiliation": "NCPD",
+    "occupation": "Cop",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Aaron_McCarlson"
+  },
+  {
+    "id": 2,
+    "name": "Aaron Waines",
+    "gender": "Male",
+    "directory": "aaron_waines",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aaron_waines/aaron_waines_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aaron_waines/aaron_waines_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aaron_waines/aaron_waines_03.png"
+    ],
+    "description": "Aaron's father was a construction worker forTerra Cognitaassigned at theAnatomiconbuilding. While Aaron was part of theAnimals, theirripperdocDamir, at the insistence ofAngelica Whelan, implanted a failsafe device on him in secret. This experimental French implant, located in Aaron's inner ear, grants Angelica the ability to effectively incapacitate Aaron, ensuring his defeat in predetermined boxing rounds. After leaving the Animals, Aaron aspires to pursue a career as a prominent boxer and seeks V's assistance in persuading Damir to remove the implanted device.",
+    "affiliation": "Animals",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Aaron_Waines"
+  },
+  {
+    "id": 3,
+    "name": "Adam Smasher",
+    "gender": "Male",
+    "directory": "adam_smasher",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/adam_smasher/adam_smasher_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/adam_smasher/adam_smasher_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/adam_smasher/adam_smasher_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/adam_smasher/adam_smasher_04.png"
+    ],
+    "description": "Adam Smasheris afull borgmercenaryemployed byArasakawho became a notorioussoloand rival ofMorgan Blackhand. By2077, he had risen to the position of head of security within Arasaka and the personal bodyguard ofYorinobu Arasaka. Smasher is a towering cyborg, with little humanity left to be seen, not that he ever had much. After being reduced to mush by a rocket blast, Arasaka offered him a choice—either pull the plug or become a full body conversion cyborg. With little to no options and a lack of care for his human side, he agreed and became more machine than man. Adam has no empathy for others...",
+    "affiliation": "Arasaka",
+    "occupation": "Solo",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Adam_Smasher"
+  },
+  {
+    "id": 4,
+    "name": "Akira",
+    "gender": "Male",
+    "directory": "akira",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/akira/akira_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/akira/akira_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/akira/akira_03.png"
+    ],
+    "description": "Akirais a character that appears inCyberpunk 2013andCyberpunk 2077as a security guard ofArasaka. Akira was a prominent bodyguard in theArasaka Towerin 2013. He was described by the employees as the 'Hulk from hell.' He was tasked with guardingToshiro, the high level corporate of theArasaka CorporationinNight City. In 2013, Toshiro and Akira greetedAlt Cunninghamin the bar of Arasaka Tower with a glass of scotch upon being awoken after the kidnapping. However during the meeting between Toshiro and Alt, a riot at the foot of the tower was created withrockerboyJohnny Silverhandleading the...",
+    "affiliation": "Arasaka",
+    "occupation": "Solo",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Akira"
+  },
+  {
+    "id": 5,
+    "name": "Alan Noël",
+    "gender": "Male",
+    "directory": "alan_noël",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/alan_noël/alan_noël_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/alan_noël/alan_noël_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/alan_noël/alan_noël_03.png"
+    ],
+    "description": "When V met him in 2077, he had been infiltrating theVoodoo BoysinDogtownfor months, which he hated. He tried to convince V not to killMilko, the local Voodoo Boys lead netrunner, in order to make the greater VDB criminal network fall.",
+    "affiliation": "NetWatch",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Alan_No%C3%ABl"
+  },
+  {
+    "id": 6,
+    "name": "Albert Murphy",
+    "gender": "Male",
+    "directory": "albert_murphy",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/albert_murphy/albert_murphy_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/albert_murphy/albert_murphy_02.png"
+    ],
+    "description": "Albert Murphyis a high-ranking member ofBARGHESTinCyberpunk 2077:Phantom Liberty.",
+    "affiliation": "Barghest",
+    "occupation": "BARGHEST soldier",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Albert_Murphy"
+  },
+  {
+    "id": 7,
+    "name": "Alois Daquin",
+    "gender": "Male",
+    "directory": "alois_daquin",
+    "has_images": false,
+    "images": [],
+    "description": "Alois Daquin was aCorpowho betrayed multiple people inNight City, includingRegina Jones, and had to skip town as a result. His body was recovered byScavengersand brought to the basement ofCharles Bucks's clinic, where all of hiscyberwarewas stripped to be resold.",
+    "affiliation": "Unknown",
+    "occupation": "Corporate",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Alois_Daquin"
+  },
+  {
+    "id": 8,
+    "name": "Anders Hellman",
+    "gender": "Male",
+    "directory": "anders_hellman",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anders_hellman/anders_hellman_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anders_hellman/anders_hellman_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anders_hellman/anders_hellman_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anders_hellman/anders_hellman_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anders_hellman/anders_hellman_05.png"
+    ],
+    "description": "Anders Hellmanis a prominent bioengineer and central character inCyberpunk 2077, most known for having the leading role in the creation of theRelicprogram. Anders Hellman was an expert in neural networks and had a number of successful patents under his name, He was considered to be one of the cornerstones ofArasakascientific project development. His most prominent role within the megacorporation was steering the advancement of theRelicProject as its director. Using theSoulkiller's source code, Hellman created a new piece of technology that is capable of communicating with personality...",
+    "affiliation": "Arasaka",
+    "occupation": "Corporate",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Anders_Hellman"
+  },
+  {
+    "id": 9,
+    "name": "Andrew Jones",
+    "gender": "Male",
+    "directory": "andrew_jones",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_jones/andrew_jones_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_jones/andrew_jones_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_jones/andrew_jones_03.jpg"
+    ],
+    "description": "Andrew Jonesis the sheriff of theSouthern Californiantown ofYuccainLos Padres County. Andrew Jones served in aNUSAmilitary special forces operations unit known as the \"Silver Shoguns\" during theUnification Waragainst theFree States. After the war ended, Jones became the sheriff of the small town ofYucca,Los Padres County, in theBadlandsof the NUSA-loyalist state ofSouthern California. He bore a strong prejudice against outsiders to Yucca, especiallynomads. IfVhas theNomad lifepath, Sheriff Jones caught V inMike'sautoshop. After probing V's intentions and confirming his suspicion they were a...",
+    "affiliation": "South California",
+    "occupation": "Cop",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Andrew_Jones"
+  },
+  {
+    "id": 10,
+    "name": "Andrew Newman",
+    "gender": "Male",
+    "directory": "andrew_newman",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_newman/andrew_newman_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_newman/andrew_newman_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Unknown",
+    "occupation": "Cyberjunkie",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Andrew_Newman"
+  },
+  {
+    "id": 11,
+    "name": "Andrew Weyland",
+    "gender": "Male",
+    "directory": "andrew_weyland",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_weyland/andrew_weyland_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_weyland/andrew_weyland_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/andrew_weyland/andrew_weyland_03.png"
+    ],
+    "description": "Andrew Weyland leads one of the most terrifying black ops units in the corporate world: theWater Leopards. The Water Leopards are a group of Jamaicanmercenariesthat freelanced successfully for several years before hooking up withAngus Youngblood. Since Youngblood joinedPetrochem, they have become part of the company's military forces. Weyland is heavily into Rastafarian Mysticism, and he uses it as a tool to terrorize his targets and enemies. A ruthless and cruel man who enjoys his work and never tires of killing, he is a lethal enemy. He is also completely loyal to Angus Youngblood, although...",
+    "affiliation": "Water LeopardsPetrochem",
+    "occupation": "Solo",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Andrew_Weyland"
+  },
+  {
+    "id": 12,
+    "name": "Angel (2077)",
+    "gender": "Male",
+    "directory": "angel_2077",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/angel_2077/angel_2077_01.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Clouds",
+    "occupation": "Doll",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Angel_%282077%29"
+  },
+  {
+    "id": 13,
+    "name": "Anthony Anderson",
+    "gender": "Male",
+    "directory": "anthony_anderson",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_anderson/anthony_anderson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_anderson/anthony_anderson_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Unknown",
+    "occupation": "Ripperdoc",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Anthony_Anderson"
+  },
+  {
+    "id": 14,
+    "name": "Anthony Gilchrist",
+    "gender": "Male",
+    "directory": "anthony_gilchrist",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_gilchrist/anthony_gilchrist_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_gilchrist/anthony_gilchrist_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_gilchrist/anthony_gilchrist_03.png"
+    ],
+    "description": "In 2077, Anthony started secretly collaborating with theMaelstromgang, then led byDeclan Griffinaka \"Brick\", acting as their mole. Gilchrist would provide Brick with details about Militech shipments via his contact,Ofelia Sirawianaka \"Patricia\", and Maelstrom would steal the shipments and give Gilchrist a cut of the profits after selling the goods. This deal ended up crossing a line when Gilchrist leaked the security protocols for an important Militech convoy which contained aFlathead, allowing Maelstrom to capture it. Meredith Stout, a Militech senior operations manager, traced the leak...",
+    "affiliation": "Militech",
+    "occupation": "Corpo",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Anthony_Gilchrist"
+  },
+  {
+    "id": 15,
+    "name": "Anthony Harris",
+    "gender": "Male",
+    "directory": "anthony_harris",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_harris/anthony_harris_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_harris/anthony_harris_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_harris/anthony_harris_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_harris/anthony_harris_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/anthony_harris/anthony_harris_05.png"
+    ],
+    "description": "Anthony Harrisis aNight Citizenwho gained public recognition with the discovery of his hidden life of crime spent abducting and murdering youth during 2077 and previous years, being dubbed by the people ofNight Cityas \"Meatman\" and codenamed by theNCPDas \"Peter Pan.\" Anthony grew up in the town ofLaguna Bend- turned into a reservoir in 2062 - and attended itspublic school. He spent his childhood years onEdgewood Farmin theBadlands, helping his father with the family business. His mother died young, leaving him with a single parent who employed strict discipline a farm employee might be more...",
+    "affiliation": "Unknown",
+    "status": "Alive (comatose)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Anthony_Harris"
+  },
+  {
+    "id": 16,
+    "name": "Antonio Luccessi",
+    "gender": "Male",
+    "directory": "antonio_luccessi",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/antonio_luccessi/antonio_luccessi_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/antonio_luccessi/antonio_luccessi_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/antonio_luccessi/antonio_luccessi_03.png"
+    ],
+    "description": "Antonio Luccessiwas the executive vice-president ofMilitech, as well as the founder of its progenitor,Armatech-Luccessi. Antonio was born inItalyin1935. Not much was known about his upbringing, but by the mid1950s, Luccessi was working as an armorer for NATO and later the firearms manufacturerBeretta. With his vast knowledge as a gunsmith, in1992Antonio emigrated to theUnited States, lending his expertise toColt Firearmsuntil1996, when he foundedArmatech-Luccessi Internationalin Laconia,New Hampshire. By1998, the company had already a small but successful line of products on the market....",
+    "affiliation": "Militech",
+    "occupation": "Techie",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Antonio_Luccessi"
+  },
+  {
+    "id": 17,
+    "name": "Archibald Crane",
+    "gender": "Male",
+    "directory": "archibald_crane",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/archibald_crane/archibald_crane_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/archibald_crane/archibald_crane_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/archibald_crane/archibald_crane_03.jpg"
+    ],
+    "description": "Crane is aMilitechemployee. Occasionally, he will help outnomadsor other individuals cross theBorder Wall.",
+    "affiliation": "Militech",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Archibald_Crane"
+  },
+  {
+    "id": 18,
+    "name": "Arif Iqbal",
+    "gender": "Male",
+    "directory": "arif_iqbal",
+    "has_images": false,
+    "images": [],
+    "description": "In the early summer of2077he was invited byKurt Hansento attend the party at theBlack Sapphire. During the party, he can be seen interacting with the news anchor forN54 News,Gillean Jordan.",
+    "affiliation": "World News Service",
+    "occupation": "Media",
+    "status": "Alive (2077)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Arif_Iqbal"
+  },
+  {
+    "id": 19,
+    "name": "Arif Koneczko",
+    "gender": "Male",
+    "directory": "arif_koneczko",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/arif_koneczko/arif_koneczko_01.png"
+    ],
+    "description": "Sometime during 2077, Arif was tasked with retrieving \"stuff\" byCharles[citation needed]. Things went south and he lost his chooms Boris and Tim to a unknownsolo. Ultimately, depending onV's actions, Arif met his demise during anAssault in ProgressinKabuki.",
+    "affiliation": "Scavengers",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Arif_Koneczko"
+  },
+  {
+    "id": 20,
+    "name": "Arnold Haponik",
+    "gender": "Male",
+    "directory": "arnold_haponik",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/arnold_haponik/arnold_haponik_01.jpg"
+    ],
+    "description": "Arnold Haponikis aWraithfound at a filling station near theregional airportin theSouthern Desert,Badlands. Fromthe shardnear to him, it can be surmised that Haponik was exacting revenge on a dealer that tried to skim a little money off the top when selling weapons to theTyger Claws. The body with aknifein it that Haponik is found leaning over suggests he was able to track him down.",
+    "affiliation": "Wraiths",
+    "occupation": "Raffen Shiv",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Arnold_Haponik"
+  },
+  {
+    "id": 21,
+    "name": "Arthur Jenkins",
+    "gender": "Male",
+    "directory": "arthur_jenkins",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/arthur_jenkins/arthur_jenkins_01.png"
+    ],
+    "description": "Arthur Jenkinswas a senior member of theArasakaCorporation's Counterintelligence Division and head of Night City's department inCyberpunk 2077.Jenkins is referred to as a \"very capable psychopath\" by an Arasaka subordinate which is what makes him an effective leader. Ultimately, Abernathy's agents retrieve the datashard with all incriminating information collected on her. Jenkins and the majority of the Counter Intelligence Division are executed at some point. V is spared only because of theirValentinosandMoxcompatriots keeping the peace at Lizzie's Bar. Though fired and left virtually...",
+    "affiliation": "Arasaka",
+    "occupation": "Senior member of Arasaka Counter Intelligence Division",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Arthur_Jenkins"
+  },
+  {
+    "id": 22,
+    "name": "Asher Peterson",
+    "gender": "Male",
+    "directory": "asher_peterson",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/asher_peterson/asher_peterson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/asher_peterson/asher_peterson_02.jpg"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "MaxTac",
+    "occupation": "Lawman",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Asher_Peterson"
+  },
+  {
+    "id": 23,
+    "name": "Ashlay",
+    "gender": "Male",
+    "directory": "ashlay",
+    "has_images": false,
+    "images": [],
+    "description": "Ashlay was anetrunnerliving inNight City. At some point he got contracted byCharon Exoticsto set up their net security. IfVhacked Charon Exotics' transceivers and later took control ofQuadra Sport R-7 \"Charon\":",
+    "affiliation": "Charon Exotics",
+    "occupation": "Netrunner",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ashlay"
+  },
+  {
+    "id": 24,
+    "name": "Axel Mankievicz",
+    "gender": "Male",
+    "directory": "axel_mankievicz",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/axel_mankievicz/axel_mankievicz_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/axel_mankievicz/axel_mankievicz_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/axel_mankievicz/axel_mankievicz_03.png"
+    ],
+    "description": "Axeman was born and raised on the street, spending his childhood living out of cardboard boxes andCoffins. He eventually became a private investigator, taking jobs theNight City Police Departmentwere unwilling to, such as murders committed in theCombat Zone. He got through most cases non-violently. Eventually, Axeman retired as a detective due to several near-death experiences, including time spent in a coma and a severe beating fromInfocompagents. After theFourth Corporate War, he found work withJohn \"The Professor\" Freemanassisting war veterans, specialising in tracking down those that have...",
+    "affiliation": "Unknown",
+    "occupation": "Solo",
+    "status": "Alive (2045)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Axel_Mankievicz"
+  },
+  {
+    "id": 25,
+    "name": "Ayden Daniels",
+    "gender": "Male",
+    "directory": "ayden_daniels",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ayden_daniels/ayden_daniels_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ayden_daniels/ayden_daniels_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "NCPD",
+    "occupation": "Lawman",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ayden_Daniels"
+  },
+  {
+    "id": 26,
+    "name": "Aymeric Cassel",
+    "gender": "Male",
+    "directory": "aymeric_cassel",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aymeric_cassel/aymeric_cassel_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aymeric_cassel/aymeric_cassel_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aymeric_cassel/aymeric_cassel_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aymeric_cassel/aymeric_cassel_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/aymeric_cassel/aymeric_cassel_05.jpg"
+    ],
+    "description": "A French netrunner, Aymeric Cassel and his twin sisterAurorehave worked for various high-profile clients inFranceand WesternEuropeunder their collective pseudonym \"Skylight\". For Aymeric, this includes working forPetrochemduring the years of2072-2074. At an indeterminate time, they were hired byMilitechto reactivate the secretiveProject Cynosure, with the goal of capturing and harnessing powerfulAIsfrom beyond theBlackwall. Aymeric practices \"spiritual hygiene\" by avoiding substance abuse and regularly transfers his memories to external storage disks. However, the latter led to his memories...",
+    "affiliation": "Militech",
+    "occupation": "Netrunner",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Aymeric_Cassel"
+  },
+  {
+    "id": 27,
+    "name": "Baird",
+    "gender": "Male",
+    "directory": "baird",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/baird/baird_01.png"
+    ],
+    "description": "Not much is known about Baird other than that he is a former cyber security expert who is now an associate ofMr. Hands.",
+    "affiliation": "Mr. Hands",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Baird"
+  },
+  {
+    "id": 28,
+    "name": "Barry Alken",
+    "gender": "Male",
+    "directory": "barry_alken",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/barry_alken/barry_alken_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/barry_alken/barry_alken_02.png"
+    ],
+    "description": "Alken is a criminal wanted by theNight City Police Department, and has been charged with first-degree murder and illegal trade ofcyberware. Ultimately, depending onV's actions, Barry met his demise during an suspected organized crime activity inLittle China.",
+    "affiliation": "Scavengers",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Barry_Alken"
+  },
+  {
+    "id": 29,
+    "name": "Bartolomeo Mordellini",
+    "gender": "Male",
+    "directory": "bartolomeo_mordellini",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bartolomeo_mordellini/bartolomeo_mordellini_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bartolomeo_mordellini/bartolomeo_mordellini_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bartolomeo_mordellini/bartolomeo_mordellini_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bartolomeo_mordellini/bartolomeo_mordellini_04.jpg"
+    ],
+    "description": "Mordellini is an illicit entertainer, often renting out entire clubs for his parties and fundraisers. While his parties ensue, he will recordbraindanceswhich fetch for a fair price on the black market. He is the owner of the luxurious yachtGEIshhhhA, which is moored at theGold Beach Marina. In2077, he will hireKajetan Zilevskito neutralizeSandra Faucet, a formerCorporatewho owes him money but is unable to pay her debt as she was fired from her job atZetatech.",
+    "affiliation": "Unknown",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bartolomeo_Mordellini"
+  },
+  {
+    "id": 30,
+    "name": "B@d",
+    "gender": "Male",
+    "directory": "bd",
+    "has_images": false,
+    "images": [],
+    "description": "b@d tasksfixerRegina Jonesto hirea mercto infiltrateMegabuilding H11inWatson. B@d needs their malware uploaded to the building's computer in order to use it as smokescreen to attack anArasakasubnet. On the top of the communications tower on Forbes Street inKabuki, the corpse of a netrunner called Watcher can be found. He carries an archived conversation in which b@d asks him to use their \"sweet little program [...] to jailbreak the system in Kabuki\". b@d adds that they are not able to physically jack into the tower themselves. Although b@d is concerned for his safety and tells him to be...",
+    "affiliation": "Unknown",
+    "occupation": "Netrunner",
+    "status": "Active (2077)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/B%40d"
+  },
+  {
+    "id": 31,
+    "name": "Ben DeBaillon",
+    "gender": "Male",
+    "directory": "ben_debaillon",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ben_debaillon/ben_debaillon_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ben_debaillon/ben_debaillon_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ben_debaillon/ben_debaillon_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ben_debaillon/ben_debaillon_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/ben_debaillon/ben_debaillon_05.png"
+    ],
+    "description": "Ben DeBaillon, also known asSpaceBoy_66, is aVoodoo Boysnetrunner who, in attempt to climb the gang ladder, tried to take the Grand Imperial Mall from theAnimalsand got discovered byNetWatch, leading him intocyberpsychosis. Ben's plan seemed to be well-thought out although, in lack of proper connections and full gang support, he had to rely on recommendation by word. Prior to even approaching the topic of virtually taking over the mall, he followed a friend's endorsement of a company called Eagle Eye Inc. and hired them to perform reconnaissance and risk assessment of the area. Prior to doing...",
+    "affiliation": "Voodoo Boys",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ben_DeBaillon"
+  },
+  {
+    "id": 32,
+    "name": "Benedict McAdams",
+    "gender": "Male",
+    "directory": "benedict_mcadams",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/benedict_mcadams/benedict_mcadams_01.png"
+    ],
+    "description": "Benedict McAdamsis a reliable, professional merc, often relied upon by theBadlandsfixerDakota Smith, through whose contract he ended up in need of a rescue himself. The job he had been hired to do was an easy one, although solely by execution. Namely, Councilman McClean, an individual of political perspective, was becoming increasingly problematic for the resident Badlands fixer due to his persistence in coercing her to loose a step in her footing. The only visible solution she could think of is simply removing him from the story altogether, and McAdams was happy to oblige. Due to the...",
+    "affiliation": "Unknown",
+    "occupation": "Solo",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Benedict_McAdams"
+  },
+  {
+    "id": 33,
+    "name": "Big Joe",
+    "gender": "Male",
+    "directory": "big_joe",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/big_joe/big_joe_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/big_joe/big_joe_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/big_joe/big_joe_03.jpg"
+    ],
+    "description": "His father was a drunkard. Coming home one day with his father already passed out and no food left in the fridge, Joe snuck out to the diner near him to order food. Here he met Kirk, whom sat down next to him and shared his burger and started talking, and ever since that day they stuck together.",
+    "affiliation": "Unknown",
+    "occupation": "Bodyguard",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Big_Joe"
+  },
+  {
+    "id": 34,
+    "name": "Big Pete",
+    "gender": "Male",
+    "directory": "big_pete",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/big_pete/big_pete_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/big_pete/big_pete_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/big_pete/big_pete_03.png"
+    ],
+    "description": "Big Pete is the manager of theNew American Autoworksauto repair shop in the southernBadlands. Before he started working as a mechanic for theWraiths, aRaffen Shivfaction, he was atechieconducting work inNight City. Though, during his time in the city he made a lot of enemies, which has led to him seeking refuge elsewhere. He botched up a joband because of this he is now a wanted man.Dakota Smith, owing several friends a favor, has put out a contract for his neutralization. Upon encountering him in the basement of his garage, he will askVto spare him in exchange for money.",
+    "affiliation": "Unknown",
+    "occupation": "Car MechanicTechie(formerly)[1]",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Big_Pete"
+  },
+  {
+    "id": 35,
+    "name": "Bill Jablonsky",
+    "gender": "Male",
+    "directory": "bill_jablonsky",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bill_jablonsky/bill_jablonsky_01.png"
+    ],
+    "description": "Bill is the grieving widower of his deceased wife, Caroline Jablonsky, who was murdered byJoshua Stephenson. ThroughWakako Okada, Bill hiresVto assassinate Joshua during his transit across Arroyo, with V responsible for driving Bill's vehicle of choice. Before spotting Joshua's NCPD transport, Bill reveals his intentions to murder Joshua in revenge of his deceased wife, believing that Joshua's BD deal was the murderer unfairly escaping death sentence, and by extension, justice. During this conversation, V can point out flaws in Bill's plans with a sufficient level ofCool, pointing out that...",
+    "affiliation": "Unknown",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bill_Jablonsky"
+  },
+  {
+    "id": 36,
+    "name": "Bill Mitchel",
+    "gender": "Male",
+    "directory": "bill_mitchel",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bill_mitchel/bill_mitchel_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bill_mitchel/bill_mitchel_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "NCPD",
+    "occupation": "Lawman(formerly, dependent)",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bill_Mitchel"
+  },
+  {
+    "id": 37,
+    "name": "Blake Croyle",
+    "gender": "Male",
+    "directory": "blake_croyle",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/blake_croyle/blake_croyle_01.png"
+    ],
+    "description": "Blake Croyle likes to give the impression of a polite, well-spoken man whose job is simply to collect the debts of those he so graciously lent someeurodollarsto out of the kindness of his own heart. The truth of the matter, however, is that he is a predator, barely a step above the brutish thugs from theAnimalsthat he himself pays to do his dirty work. And choom, he puts the \"shark\" in loanshark. See, he uses a very simple system: first and foremost, don't let your mark realize what a gonk they are right away. Be their friend, offer your generosity...and then, when the time comes, snap the...",
+    "affiliation": "Animals",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Blake_Croyle"
+  },
+  {
+    "id": 38,
+    "name": "Ainara Álvarez",
+    "gender": "Female",
+    "directory": "ainara_álvarez",
+    "has_images": false,
+    "images": [],
+    "description": "Ainara Álvarezis a character inCyberpunk 2077. She isJudy Álvarez's grandmother, and can only be spoken to through phone messages. As Female V, about a day after second date inI Really Want to Stay at Your Houseplus a visit to collect Judy's gift in Judy's apartment, Judy would text to apologize for blabbing about her relationship and warned V about Ainara's interrogation skills. Described as \"5'2\" of pitbull\", but is sweet after the initial interrogations. Her reservations revolve around V being a merc and her distrust of Corpo's with fake manners (sinceMaikafit the bill, but it's better if...",
+    "affiliation": "Unknown",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ainara_%C3%81lvarez"
+  },
+  {
+    "id": 39,
+    "name": "Alena Xenakis",
+    "gender": "Female",
+    "directory": "alena_xenakis",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/alena_xenakis/alena_xenakis_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/alena_xenakis/alena_xenakis_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/alena_xenakis/alena_xenakis_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/alena_xenakis/alena_xenakis_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/alena_xenakis/alena_xenakis_05.png"
+    ],
+    "description": "Alena Xenakis,also known asAlex, is a character inCyberpunk 2077:Phantom Liberty. Alena grew up in the slums of theLos AngelesMetroplex, and following her dream, she became an aspiringbraindanceactress. Unknown to her, the braindance studio she joined was a front for theFederal Intelligence Agency. Her formidable acting skills impressed them enough that she was recruited bySolomon Reed. Ever since, she has worked with the FIA in many covert operations, becoming a talented shapeshifter. At some point after theUnification War, Alex was placed inDogtownas an undercover agent.",
+    "affiliation": "FIA",
+    "occupation": "Lawman",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Alena_Xenakis"
+  },
+  {
+    "id": 40,
+    "name": "Altiera Cunningham",
+    "gender": "Female",
+    "directory": "altiera_cunningham",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/altiera_cunningham/altiera_cunningham_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/altiera_cunningham/altiera_cunningham_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/altiera_cunningham/altiera_cunningham_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/altiera_cunningham/altiera_cunningham_04.png"
+    ],
+    "description": "Altiera Cunningham,better known asAlt, was the bestnetrunnerinNight Cityduring the 2000s-2010s. She was described as a beautiful and talented woman; having worked for theITSCorporation, and being the developer of the infamousSoulkillerprogram. Cunningham was also the girlfriend of the famousrockerboyJohnny Silverhand. Her whole life changed however, when she was kidnapped by theArasakaCorporation, who used her to create a version of the program for them, and later made her the program's first victim. Now her consciousness exists only as a digital ghost inthe Net. Cunningham was one of those...",
+    "affiliation": "ITS(formerly)",
+    "occupation": "SPINetrunner",
+    "status": "Deceased (physically)Active (engram)[1]",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Altiera_Cunningham"
+  },
+  {
+    "id": 41,
+    "name": "Ana Friedman",
+    "gender": "Female",
+    "directory": "ana_friedman",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/ana_friedman/ana_friedman_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/ana_friedman/ana_friedman_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/ana_friedman/ana_friedman_03.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Brazilian Intelligence Agency",
+    "occupation": "BIA Agent",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ana_Friedman"
+  },
+  {
+    "id": 42,
+    "name": "Angelica Whelan",
+    "gender": "Female",
+    "directory": "angelica_whelan",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/angelica_whelan/angelica_whelan_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/angelica_whelan/angelica_whelan_02.png"
+    ],
+    "description": "Angelica has pink hair with blue streaks. She wears aStr33t Dandy composite-coated capatop her head. Around her neck, she wears a black choker with purple rims. She also wears theBermuda Triangle protective-mesh muscle tank, layered under a gold bolero jacket. For pants, she wears tight leather slacks adorned with a goldSeigaihapattern. She wears gold bands on both forearms, which extend to her middle fingers in the form of a vertical line and rings. On the back of her left hand, she has a small tattoo.",
+    "affiliation": "Animals",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Angelica_Whelan"
+  },
+  {
+    "id": 43,
+    "name": "Angie Mielech",
+    "gender": "Female",
+    "directory": "angie_mielech",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/angie_mielech/angie_mielech_01.jpg"
+    ],
+    "description": "Angie Mielech, also known asPakeha, is a character inCyberpunk 2077. She was added inPatch 1.5as part of a newMini World Story. Little is known about Angie, other than that she most likely lives somewhere inNight City, as she can be found at the Pier inWellsprings. At some point in2077, she lost herKeyin the bay of Wellsprings.Vcan retrieve and return the key to her.",
+    "affiliation": "Unknown",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Angie_Mielech"
+  },
+  {
+    "id": 44,
+    "name": "Anna Hamill",
+    "gender": "Female",
+    "directory": "anna_hamill",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_hamill/anna_hamill_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_hamill/anna_hamill_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_hamill/anna_hamill_03.png"
+    ],
+    "description": "Anna Hamill worked as a patrol officer inNight City. Amidst the rife corruption of theNCPD, Anna remained honest and was against any form of injustice. Her intentions were always pure, and she was one of the few good cops in town looking to make a difference. This, however, did not sit well with her less ethical colleagues. She would often become involved in matters the NCPD were already well aware of but simply turned a blind eye to. Despite the hostility from her colleagues, she persisted. While decent and honest, Anna is shown to be quick tempered and impulsive. In 2077, Anna began working...",
+    "affiliation": "Aldecaldos",
+    "occupation": "Cop(formerly)",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Anna_Hamill"
+  },
+  {
+    "id": 45,
+    "name": "Anna Nox",
+    "gender": "Female",
+    "directory": "anna_nox",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_nox/anna_nox_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_nox/anna_nox_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_nox/anna_nox_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_nox/anna_nox_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/anna_nox/anna_nox_05.jpg"
+    ],
+    "description": "Anna Noxis aMoxleader and manager of a Mox warehouse on Longshore North, she sufferedcyberpsychosisupon experiencing abraindancefeaturing the suffering and death of a Mox protectee. Anna worked atLizzie's Barand managed a nearby Mox warehouse. Following the death of a fellow Mox, she commenced with her own private investigation into the crime that had taken place. Starting with anXBD, Anna's associateLil Bex, contracted the crack-BD-tunerHal Cantos. Hal was required to quickly isolate code from the XBD containing the death of a girl under the Moxes care, consequently allowing the...",
+    "affiliation": "The Mox",
+    "occupation": "Mox leader",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Anna_Nox"
+  },
+  {
+    "id": 46,
+    "name": "Annie Capolino",
+    "gender": "Female",
+    "directory": "annie_capolino",
+    "has_images": false,
+    "images": [],
+    "description": "Trigger is a young woman who helpsIcepickwith security at the bar. She's a Solo specializing in security penetration and stealth operations. She frequently takes leaves of absence from the bar to run Jobs for clients. Trigger is something of an expert on the local crime scene. I was told to ask her if I had any questions about local gangs or crime outfits. Trigger spends a lot of her time withDollar Bill, although no one seems clear on their relationship; neither would talk about it. Trigger, like her associate, is a permanent resident of the Hotel Sierra building. She lives in a third-floor...",
+    "affiliation": "Forlorn Hope",
+    "occupation": "Solo",
+    "status": "Alive (2020)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Annie_Capolino"
+  },
+  {
+    "id": 47,
+    "name": "Arabelle Luvasha",
+    "gender": "Female",
+    "directory": "arabelle_luvasha",
+    "has_images": false,
+    "images": [],
+    "description": "Arabelle Luvashais a character inCyberpunk 2077. She was added inPatch 1.5as part of a newMini World Story. Little is known about Arabelle, other than that she most likely lives somewhere inThe Glen,Heywood, as she can be found in theReconciliation Park.",
+    "affiliation": "Unknown",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Arabelle_Luvasha"
+  },
+  {
+    "id": 48,
+    "name": "Aurore Cassel",
+    "gender": "Female",
+    "directory": "aurore_cassel",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/aurore_cassel/aurore_cassel_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/aurore_cassel/aurore_cassel_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/aurore_cassel/aurore_cassel_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/aurore_cassel/aurore_cassel_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/aurore_cassel/aurore_cassel_05.png"
+    ],
+    "description": "A French netrunner, Aurore Cassel and her twin brotherAymerichave worked for various high-profile clients inFranceand WesternEuropeunder their collective pseudonym \"Skylight\". At an indeterminate time they were hired byMilitechto reactivate the secretiveProject Cynosure, with the goal of capturing and harnessing powerfulAIsfrom beyond theBlackwall. They also did various jobs for the criminal underworld of France and Western Europe, although such work was not without consequences--Aurore ended up in a stint atParis's high-security La Santé Prison for five years, and ultimately had a bounty...",
+    "affiliation": "Militech",
+    "occupation": "Netrunner",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Aurore_Cassel"
+  },
+  {
+    "id": 49,
+    "name": "Ayo Zarin",
+    "gender": "Female",
+    "directory": "ayo_zarin",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/ayo_zarin/ayo_zarin_01.png"
+    ],
+    "description": "Ayo is a heavily chromed individual, with several arm and leg modifications as well as a cybernetic jaw. She utilizes theAgaoutomahawk. She was running the local Voodoo Boys at the ruins ofLuxor High Wellness SpainDogtown.Dodgercontacted her to hire twelve Voodoo Boysnetrunnersto protectHansen's reception at theBlack SapphireV attended withReed.",
+    "affiliation": "Voodoo Boys",
+    "occupation": "Gang lieutenant",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ayo_Zarin"
+  },
+  {
+    "id": 50,
+    "name": "Bara Nova",
+    "gender": "Female",
+    "directory": "bara_nova",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bara_nova/bara_nova_01.png"
+    ],
+    "description": "Bara Nova is aRussianDJ and music producer whose songs are featured inNight City's95.2 Samizdat Radio, and they are quite popular among NC night clubs such as theEmpathy.",
+    "affiliation": "Unknown",
+    "occupation": "DJMusic producer",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bara_Nova"
+  },
+  {
+    "id": 51,
+    "name": "Barbara Okoye",
+    "gender": "Female",
+    "directory": "barbara_okoye",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/barbara_okoye/barbara_okoye_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/barbara_okoye/barbara_okoye_02.png"
+    ],
+    "description": "Barbara Okoye, better known by her nicknameBabs, is a member ofBARGHESTinCyberpunk 2077:Phantom Liberty.",
+    "affiliation": "Barghest",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Barbara_Okoye"
+  },
+  {
+    "id": 52,
+    "name": "Beatrice Ellen Trieste",
+    "gender": "Female",
+    "directory": "beatrice_ellen_trieste",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/beatrice_ellen_trieste/beatrice_ellen_trieste_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/beatrice_ellen_trieste/beatrice_ellen_trieste_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/beatrice_ellen_trieste/beatrice_ellen_trieste_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/beatrice_ellen_trieste/beatrice_ellen_trieste_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/beatrice_ellen_trieste/beatrice_ellen_trieste_05.png"
+    ],
+    "description": "Beatrice Ellen Trieste,better known by her handle8ug8ear, is a minor character inCyberpunk 2077. 8ug8ear was a skilledNetrunnerliving inJapantown,Westbrook,Night City. She is an associate ofWakako Okadaand theTyger Claws. At some point before 2077, she wrote and publishedan opinion piececritiquing the after-effects of theDataKrashbrought about byRache Bartmoss. In 2077, she was working together with Norimasa, a Tyger Claw member, to try and steal tech from aKiroshi Opticswarehouse job. The gig had her remotely hack the Kiroshi van and cut the alarms for the Tyger Claws to get access to the...",
+    "affiliation": "Unknown",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Beatrice_Ellen_Trieste"
+  },
+  {
+    "id": 53,
+    "name": "Bes Isis",
+    "gender": "Female",
+    "directory": "bes_isis",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bes_isis/bes_isis_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bes_isis/bes_isis_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bes_isis/bes_isis_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bes_isis/bes_isis_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bes_isis/bes_isis_05.jpg"
+    ],
+    "description": "Bes Isis, bornNancy Hartley, and known professionally asNancy Rocastle, is the ex-keyboardist for the bandSamurai. After the end of her musical career, she became an investigative journalist forNetwork News 54. Nancy Hartley was a kicker for a local Boostergang before joining the bandSamurai, for which she played the keyboard.She was a member of the band until 2008 when she spent seven months in jail for throwing her abusive husband out of their 83rd story apartment through the window. During her incarceration, the band was dissolved. At some point after her release, she took on the name Bes...",
+    "affiliation": "Samurai(formerly)Network 54(2045/2077)",
+    "occupation": "Rockerboy(2013/2020)Media(2045/2077)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bes_Isis"
+  },
+  {
+    "id": 54,
+    "name": "1R-0NC-LAD",
+    "gender": "Unknown",
+    "directory": "1r-0nc-lad",
+    "has_images": false,
+    "images": [],
+    "description": "Inside theEBM Petrochem Stadium, there will be a green shipping crate located near and above theAutofixerterminal, where sparks can be seen inside it. Inside will be a damaged combat robot which is the source of the sparks. Accessing the laptop beside the robot will add 1R-0NC-LAD as a new contact, and it will then begin to sendVon a scavenger hunt throughout the EBM Petrochem Stadium for \"Robot Software\". 1R-0NC-LAD will give out photos that show the location of the Software it needs, which will be contained inside white containers. V must glean clues on where the containers are from the...",
+    "affiliation": "Barghest",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/1R-0NC-LAD"
+  },
+  {
+    "id": 55,
+    "name": "Alec Johnson",
+    "gender": "Unknown",
+    "directory": "alec_johnson",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/unknown/alec_johnson/alec_johnson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/unknown/alec_johnson/alec_johnson_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Afterlife",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Alec_Johnson"
+  },
+  {
+    "id": 56,
+    "name": "Ash",
+    "gender": "Unknown",
+    "directory": "ash",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/unknown/ash/ash_01.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "The Mox",
+    "occupation": "Radio DJ",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Ash"
+  },
+  {
+    "id": 57,
+    "name": "Barry Lewis",
+    "gender": "Unknown",
+    "directory": "barry_lewis",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/unknown/barry_lewis/barry_lewis_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/unknown/barry_lewis/barry_lewis_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/unknown/barry_lewis/barry_lewis_03.jpg"
+    ],
+    "description": "Barry Lewisis an officer of theNCPDresiding in hisapartmentinH10 megabuilding,Little China,Watson. 2077 has been a tough year for Barry, dealing with the increased rate of crime following the mayor's death and colleagues that simply having no further depth than job efficacy. Sure, Barry wants to do the right thing and help the people ofNight City, but that's somewhat difficult when every crazed gangoon or murderous corpo that gets into trouble with the law seems to be deep in the pockets of someone who can make their crimes go away with a simple transfer of eddies to the chief's wallet, or...",
+    "affiliation": "Unknown",
+    "occupation": "NCPDofficer",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Barry_Lewis"
   }
 ]

@@ -180,6 +180,12 @@
         "color": "#ff6b6b"
     },
     {
+        "id": "netwatch",
+        "name": "NetWatch",
+        "category": "corporation",
+        "color": "#4169e1"
+    },
+    {
         "id": "afterlife",
         "name": "Afterlife",
         "category": "other",

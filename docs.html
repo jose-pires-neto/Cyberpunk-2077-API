@@ -86,7 +86,7 @@
         <div class="bg-cyber-dark border border-cyber-cyan/30 rounded-lg p-6 mb-8">
             <h2 class="font-display text-lg font-bold text-cyber-cyan mb-2">Base URL</h2>
             <code class="block bg-cyber-black p-4 rounded text-cyber-green font-mono text-sm">
-                https://jose-pires-neto.github.io/Cyberpunk-2077-API/api/v1/
+                https://jose-pires-neto.github.io/Cyberpunk-2077-API/docs/api/v1/
             </code>
         </div>
 
@@ -106,15 +106,18 @@
                     <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">[
   {
     "id": 1,
-    "name": "Vincent",
+    "name": "Adam Smasher",
     "gender": "Male",
-    "directory": "vincent",
+    "directory": "adam_smasher",
+    "has_images": true,
     "images": [
-      "https://...images/characters/sex/male/vincent/v01.png",
-      "https://...images/characters/sex/male/vincent/v02.png"
+      "https://...images/characters/sex/male/adam_smasher/adam_smasher_01.png",
+      "https://...images/characters/sex/male/adam_smasher/adam_smasher_02.png"
     ],
-    "description": "V, um pseudônimo para Vincent/Valerie...",
-    "affiliation": "Mercenário"
+    "description": "Adam Smasher is a full borg mercenary...",
+    "affiliation": "Arasaka",
+    "occupation": "Solo",
+    "status": "Alive"
   }
 ]</code></pre>
                 </div>
@@ -142,7 +145,12 @@
                             <tr>
                                 <td class="py-1 font-mono text-cyber-cyan">gender</td>
                                 <td>string</td>
-                                <td>Gênero (Male/Female)</td>
+                                <td>Gênero (Male/Female/Unknown)</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-cyber-yellow">has_images</td>
+                                <td>boolean</td>
+                                <td>Se possui imagens disponíveis</td>
                             </tr>
                             <tr>
                                 <td class="py-1 font-mono text-cyber-cyan">images</td>
@@ -158,6 +166,21 @@
                                 <td class="py-1 font-mono text-cyber-cyan">affiliation</td>
                                 <td>string</td>
                                 <td>Gangue/Corporação/Profissão</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">occupation</td>
+                                <td>string</td>
+                                <td>(opcional) Profissão</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">status</td>
+                                <td>string</td>
+                                <td>(opcional) Vivo/Morto</td>
+                            </tr>
+                            <tr>
+                                <td class="py-1 font-mono text-gray-500">wiki_url</td>
+                                <td>string</td>
+                                <td>(opcional) Link para Wiki</td>
                             </tr>
                         </tbody>
                     </table>
@@ -243,18 +266,27 @@
             <div class="space-y-4">
                 <div>
                     <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">JavaScript (Fetch)</p>
-                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">fetch('https://jose-pires-neto.github.io/Cyberpunk-2077-API/api/v1/characters.json')
+                    <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">fetch('https://jose-pires-neto.github.io/Cyberpunk-2077-API/docs/api/v1/characters.json')
   .then(response => response.json())
-  .then(data => console.log(data));</code></pre>
+  .then(characters => {
+    // Filtrar apenas personagens COM imagens
+    const withImages = characters.filter(c => c.has_images !== false);
+    console.log(withImages);
+  });</code></pre>
                 </div>
                 <div>
                     <p class="text-xs text-gray-500 uppercase tracking-wider mb-2">Python</p>
                     <pre class="bg-cyber-black p-4 rounded overflow-x-auto text-sm"><code class="text-gray-300">import requests
 
-url = "https://jose-pires-neto.github.io/Cyberpunk-2077-API/api/v1/characters.json"
+url = "https://jose-pires-neto.github.io/Cyberpunk-2077-API/docs/api/v1/characters.json"
 response = requests.get(url)
-data = response.json()
-print(data)</code></pre>
+characters = response.json()
+
+# Filtrar apenas personagens COM imagens
+with_images = [c for c in characters if c.get('has_images', True)]
+
+for char in with_images[:5]:
+    print(f"{char['name']} - {char['affiliation']}")</code></pre>
                 </div>
             </div>
         </div>
