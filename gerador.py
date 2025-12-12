@@ -13,7 +13,7 @@ OUTPUT_DIR = "docs/api/v1"
 # URL base para as imagens (IMPORTANTE: Mude isso para seu repo real)
 # Se você estiver usando GitHub Pages, será algo como:
 # "https://seu-usuario.github.io/seu-repositorio/images"
-BASE_IMAGE_URL = "https://github.com/jose-pires-neto/Cyberpunk-2077-API.git/images"
+BASE_IMAGE_URL = "https://jose-pires-neto.github.io/Cyberpunk-2077-API//images"
 
 # Extensões de imagem aceitas
 VALID_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.webp'}
