@@ -1,116 +1,118 @@
 import json
 import os
 import shutil
+import sys
 from pathlib import Path
 
-# --- CONFIGURAÇÕES ---
-# Onde estão suas imagens (a pasta raiz das fotos)
-SOURCE_DIR = "images"
+# Configurar saída para UTF-8 em terminais Windows
+sys.stdout.reconfigure(encoding='utf-8')
 
-# Onde os JSONs serão salvos (para o GitHub Pages ler)
+# --- CONFIGURAÇÕES ---
+SOURCE_DIR = "images"
 OUTPUT_DIR = "docs/api/v1"
 
-# URL base para as imagens (IMPORTANTE: Mude isso para seu repo real)
-# Se você estiver usando GitHub Pages, será algo como:
-# "https://seu-usuario.github.io/seu-repositorio/images"
+# URL base para as imagens (Mude para seu repo real)
 BASE_IMAGE_URL = "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images"
 
-# Extensões de imagem aceitas
 VALID_EXTENSIONS = {'.png', '.jpg', '.jpeg', '.gif', '.webp'}
 
 # --- FUNÇÕES UTILITÁRIAS ---
 
 def get_image_list(folder_path, relative_path_start):
-    """
-    Escaneia uma pasta e retorna a lista de URLs de todas as imagens encontradas.
-    """
+    """Escaneia uma pasta e retorna URLs das imagens."""
     images = []
     if not os.path.exists(folder_path):
         return images
 
-    # Lista arquivos e ordena para manter consistência (v01, v02...)
     for filename in sorted(os.listdir(folder_path)):
         file_path = os.path.join(folder_path, filename)
-        
-        # Verifica se é arquivo e se é imagem
         if os.path.isfile(file_path):
             ext = os.path.splitext(filename)[1].lower()
             if ext in VALID_EXTENSIONS:
-                # Cria a URL pública baseada no caminho relativo
-                # Ex: characters/sex/female/v/v01.png
                 relative_path = os.path.relpath(file_path, relative_path_start)
-                # Converte barras invertidas (Windows) para barras normais (Web)
                 web_path = relative_path.replace("\\", "/")
-                
                 full_url = f"{BASE_IMAGE_URL}/{web_path}"
                 images.append(full_url)
     return images
 
 def format_name(folder_name):
-    """Transforma 'johnny_silverhand' em 'Johnny Silverhand'"""
     return folder_name.replace("_", " ").title()
 
-# --- SCANNERS DE CATEGORIA ---
+def load_existing_data(filepath):
+    """
+    Lê o JSON atual (se existir) para não perder suas edições manuais
+    ao rodar o script novamente.
+    """
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                # Cria um dicionário onde a chave é o nome para busca rápida
+                # Ex: { "V": { ...dados... }, "Judy": { ...dados... } }
+                return {item['name']: item for item in data}
+        except Exception as e:
+            print(f"⚠️ Aviso: Não foi possível ler dados antigos de {filepath}: {e}")
+    return {}
 
-def scan_characters():
+# --- SCANNERS ---
+
+def scan_characters(legacy_data):
     print("🕵️  Escaneando Personagens...")
     characters = []
     id_counter = 1
     
-    # Caminho base: images/characters/sex
     base_path = os.path.join(SOURCE_DIR, "characters", "sex")
     
     if not os.path.exists(base_path):
-        print(f"⚠️  Pasta não encontrada: {base_path}")
         return []
 
-    # Itera sobre 'male' e 'female'
     for gender in ["male", "female"]:
         gender_path = os.path.join(base_path, gender)
         
         if os.path.exists(gender_path):
-            # Itera sobre cada pasta de personagem (ex: 'v', 'judy')
             for char_folder in sorted(os.listdir(gender_path)):
                 char_full_path = os.path.join(gender_path, char_folder)
                 
                 if os.path.isdir(char_full_path):
-                    # Pega todas as imagens dentro da pasta do personagem
                     imgs = get_image_list(char_full_path, SOURCE_DIR)
+                    name = format_name(char_folder)
                     
-                    # Cria o objeto do personagem
+                    # 1. Cria dados básicos do scan
                     char_data = {
                         "id": id_counter,
-                        "name": format_name(char_folder),
+                        "name": name,
                         "gender": gender.title(),
-                        "directory": char_folder, # Útil para referência
-                        "images": imgs,
-                        # Campos extras vazios para você preencher manualmente se quiser depois,
-                        # ou criar um arquivo 'meta.json' dentro da pasta de cada um.
-                        "description": f"Personagem identificado em {gender}/{char_folder}",
-                        "affiliation": "Unknown" 
+                        "directory": char_folder,
+                        "images": imgs, # As imagens são sempre atualizadas pelo scan
+                        "description": "Edite este campo no JSON ou use info.json", # Default
+                        "affiliation": "Unknown"
                     }
-                    
-                    # Tenta ler um arquivo 'info.json' se existir dentro da pasta do personagem
-                    # para pegar dados extras como descrição, role, etc.
+
+                    # 2. RECUPERAÇÃO: Se já existia dados deste personagem, restaura os textos
+                    if name in legacy_data:
+                        old_item = legacy_data[name]
+                        # Atualiza char_data com os campos antigos, exceto imagens e id
+                        # Assim preservamos a descrição, status, role, etc.
+                        for key, value in old_item.items():
+                            if key not in ['images', 'directory', 'gender']: 
+                                char_data[key] = value
+
+                    # 3. OVERRIDE: Se tiver info.json na pasta, ele tem prioridade máxima
                     meta_file = os.path.join(char_full_path, "info.json")
                     if os.path.exists(meta_file):
                         try:
                             with open(meta_file, 'r', encoding='utf-8') as f:
                                 meta_data = json.load(f)
-                                char_data.update(meta_data) # Mescla os dados manuais
-                        except Exception as e:
-                            print(f"Erro ao ler info.json de {char_folder}: {e}")
+                                char_data.update(meta_data)
+                        except:
+                            pass
 
                     characters.append(char_data)
                     id_counter += 1
     
     return characters
 
-def scan_generic_category(category_name, folder_name):
-    """
-    Função genérica para Gangues e Distritos (já que a estrutura é mais simples)
-    Estrutura: images/{categoria}/{item_nome}/*.png
-    """
+def scan_generic_category(category_name, folder_name, legacy_data):
     print(f"🕵️  Escaneando {category_name}...")
     items = []
     id_counter = 1
@@ -118,7 +120,6 @@ def scan_generic_category(category_name, folder_name):
     base_path = os.path.join(SOURCE_DIR, folder_name)
     
     if not os.path.exists(base_path):
-        print(f"⚠️  Pasta não encontrada: {base_path}")
         return []
 
     for item_folder in sorted(os.listdir(base_path)):
@@ -126,14 +127,22 @@ def scan_generic_category(category_name, folder_name):
         
         if os.path.isdir(item_full_path):
             imgs = get_image_list(item_full_path, SOURCE_DIR)
+            name = format_name(item_folder)
             
             item_data = {
                 "id": id_counter,
-                "name": format_name(item_folder),
+                "name": name,
                 "images": imgs
             }
             
-            # Checa por info.json para dados extras
+            # Recupera dados antigos (descrições manuais)
+            if name in legacy_data:
+                old_item = legacy_data[name]
+                for key, value in old_item.items():
+                    if key not in ['images']:
+                        item_data[key] = value
+
+            # Checa info.json
             meta_file = os.path.join(item_full_path, "info.json")
             if os.path.exists(meta_file):
                 try:
@@ -150,36 +159,38 @@ def scan_generic_category(category_name, folder_name):
 
 # --- BUILDER PRINCIPAL ---
 
-def clean_and_create_dir(path):
-    if os.path.exists(path):
-        shutil.rmtree(path)
-    os.makedirs(path)
+def main():
+    print("--- INICIANDO SCAN DA NIGHT CITY (MODO SEGURO) ---")
+    
+    # 1. Carregar dados existentes ANTES de limpar a pasta
+    # Isso garante que edições manuais nos JSONs antigos não sejam perdidas
+    old_chars = load_existing_data(f"{OUTPUT_DIR}/characters.json")
+    old_gangs = load_existing_data(f"{OUTPUT_DIR}/gangs.json")
+    old_districts = load_existing_data(f"{OUTPUT_DIR}/districts.json")
+    
+    if old_chars: print(f"💾 Memória recuperada: {len(old_chars)} personagens antigos.")
+
+    # 2. Limpar e recriar pasta de saída
+    if os.path.exists(OUTPUT_DIR):
+        shutil.rmtree(OUTPUT_DIR)
+    os.makedirs(OUTPUT_DIR)
+    
+    # 3. Rodar Scans passando os dados antigos para fusão
+    chars = scan_characters(old_chars)
+    save_json(f"{OUTPUT_DIR}/characters.json", chars)
+    
+    gangs = scan_generic_category("Gangues", "gangs", old_gangs)
+    save_json(f"{OUTPUT_DIR}/gangs.json", gangs)
+    
+    districts = scan_generic_category("Distritos", "districts", old_districts)
+    save_json(f"{OUTPUT_DIR}/districts.json", districts)
+    
+    print("\n✅ API ATUALIZADA! Suas descrições manuais foram preservadas.")
 
 def save_json(path, data):
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"💾 JSON Gerado: {path} ({len(data)} itens)")
-
-def main():
-    print("--- INICIANDO SCAN DA NIGHT CITY ---")
-    
-    # 1. Prepara pasta de saída
-    clean_and_create_dir(OUTPUT_DIR)
-    
-    # 2. Escaneia Personagens (Estrutura Complexa: Sex/Male/Char)
-    chars = scan_characters()
-    save_json(f"{OUTPUT_DIR}/characters.json", chars)
-    
-    # 3. Escaneia Gangues (Estrutura Simples: Gangs/GangName)
-    gangs = scan_generic_category("Gangues", "gangs")
-    save_json(f"{OUTPUT_DIR}/gangs.json", gangs)
-    
-    # 4. Escaneia Distritos (Estrutura Simples: Districts/DistrictName)
-    districts = scan_generic_category("Distritos", "districts")
-    save_json(f"{OUTPUT_DIR}/districts.json", districts)
-    
-    print("\n✅ API ATUALIZADA COM SUCESSO!")
-    print("Lembre-se de fazer 'git push' para atualizar as imagens e os JSONs.")
+    print(f"📄 Arquivo salvo: {path}")
 
 if __name__ == "__main__":
     main()
