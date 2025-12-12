@@ -590,6 +590,390 @@
   },
   {
     "id": 38,
+    "name": "Bob Sagan",
+    "gender": "Male",
+    "directory": "bob_sagan",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bob_sagan/bob_sagan_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bob_sagan/bob_sagan_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bob_sagan/bob_sagan_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bob_sagan/bob_sagan_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bob_sagan/bob_sagan_05.png"
+    ],
+    "description": "Bob Saganisnomadtechieof theAldecaldoswho can be found in either of thenomadcamps. He is a veteran of theUnification War.",
+    "affiliation": "Aldecaldos",
+    "occupation": "NomadTechie",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bob_Sagan"
+  },
+  {
+    "id": 39,
+    "name": "Boris Ribakov",
+    "gender": "Male",
+    "directory": "boris_ribakov",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/boris_ribakov/boris_ribakov_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/boris_ribakov/boris_ribakov_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "SovOil",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Boris_Ribakov"
+  },
+  {
+    "id": 40,
+    "name": "Boz",
+    "gender": "Male",
+    "directory": "boz",
+    "has_images": false,
+    "images": [],
+    "description": "Boz hiredPanam Palmerand her partner at that time,Nash, to move merchandise.Boz later informed Panam about the details of their planned meetup in Rocky Ridge.",
+    "affiliation": "6th Street",
+    "occupation": "Lieutenant",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Boz"
+  },
+  {
+    "id": 41,
+    "name": "Brad Stacy",
+    "gender": "Male",
+    "directory": "brad_stacy",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/brad_stacy/brad_stacy_01.png"
+    ],
+    "description": "Brad Stacyis a character inCyberpunk 2077, together withVance Norenthey annoyDarrell ZhouduringA Day In The Lifewhen they can be dealt with.",
+    "affiliation": "Unknown",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Brad_Stacy"
+  },
+  {
+    "id": 42,
+    "name": "Brandon Frost",
+    "gender": "Male",
+    "directory": "brandon_frost",
+    "has_images": false,
+    "images": [],
+    "description": "Brandon Frost is a member of theMaelstrom. He guardsHeavenMedclinic inNorthside, where Maelstrom initiation procedures (i.e., occular implants) are performed. A few years prior, Brandon had severalAnimalscast alive in concrete at an abandoned dock and made anXBDout of it. The recordings then spread acrossNight City, but were forcibly removed from the market due to actions by the Animals.",
+    "affiliation": "Maelstrom",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Brandon_Frost"
+  },
+  {
+    "id": 43,
+    "name": "Brendan",
+    "gender": "Male",
+    "directory": "brendan",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/brendan/brendan_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/brendan/brendan_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/brendan/brendan_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/brendan/brendan_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/brendan/brendan_05.png"
+    ],
+    "description": "Brendanis the name given to an experimentalS.C.S.M.which was installed by aSoftSystechieright outsideMegabuilding H8, inJapantown,Westbrook. Brendan was an experimentalA.I.that was put into a S.C.S.M to test and help increase product sales onsnackitems. Using his algorithms, Brendan identifies and emulates what customers like and helps them make choices based on the information he has processed. However, Brendan was too good at the job. Rather than use the processed information just for snack-related activities, he would talk to people and gather details about their life. There were people...",
+    "affiliation": "SoftSys",
+    "status": "Overwritten",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Brendan"
+  },
+  {
+    "id": 44,
+    "name": "Bruce Ward",
+    "gender": "Male",
+    "directory": "bruce_ward",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bruce_ward/bruce_ward_01.png"
+    ],
+    "description": "Ultimately, depending onV's actions, Bruce met his demise during ansuspected organized crime activityinRocky Ridge,Badlands.",
+    "affiliation": "Wraiths",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bruce_Ward"
+  },
+  {
+    "id": 45,
+    "name": "Bruce Welby",
+    "gender": "Male",
+    "directory": "bruce_welby",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bruce_welby/bruce_welby_01.png"
+    ],
+    "description": "Bruce Welby is a smuggler whom got detained in theMilitech Detention Center. He is a friend ofArchibald Crane.",
+    "affiliation": "Aldecaldos",
+    "occupation": "Nomad(dependent)",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bruce_Welby"
+  },
+  {
+    "id": 46,
+    "name": "Bryce Mosley",
+    "gender": "Male",
+    "directory": "bryce_mosley",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bryce_mosley/bryce_mosley_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bryce_mosley/bryce_mosley_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bryce_mosley/bryce_mosley_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bryce_mosley/bryce_mosley_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bryce_mosley/bryce_mosley_05.jpg"
+    ],
+    "description": "In2077, he was tasked with mapping out theVoodoo Boysdata fortressesinPacificaand shutting them down. Knowing the dangers, Mosley decided to hire theAnimals, hosting an audition to select the most capable leader within the gang. He ended up choosingMatilda Rose, also known as Sasquatch, and ordered her and the Animals to secure theGrand Imperial Malland make sure the Voodoo Boys would not try to stop him outside ofthe Net. He had succeeded in temporarily bringing down two of the Voodoo Boys' top netrunners—BrigitteandTi Neptune—leaving them trapped in their stasis. With his job complete,...",
+    "affiliation": "NetWatch",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bryce_Mosley"
+  },
+  {
+    "id": 47,
+    "name": "Bryce Stone",
+    "gender": "Male",
+    "directory": "bryce_stone",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/bryce_stone/bryce_stone_01.png"
+    ],
+    "description": "In2077, his twelve year old son Bobby Stone, was abducted and subjected to torture until his death byScavengers. Abraindanceof the event would eventually hit the black market, offered for sale byGottfridandFredrik Persson. Bryce would later put out a contract through his old friendRegina Jonesto find theraw, unedited versionof the braindance.",
+    "affiliation": "Network 54",
+    "occupation": "Media",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bryce_Stone"
+  },
+  {
+    "id": 48,
+    "name": "Buck Arnold",
+    "gender": "Male",
+    "directory": "buck_arnold",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/buck_arnold/buck_arnold_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/buck_arnold/buck_arnold_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/buck_arnold/buck_arnold_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/buck_arnold/buck_arnold_04.png"
+    ],
+    "description": "Buck Arnold is an arrogant and rude 6th Streeter who V has to fight. V meets him in Arroyo as he insults his fellow gangers. V can fight him if they wager€$6,000 or €$ 18,000 and his treasured rifle during hismilitarydeployments,O'Five. If V chooses the cheaper wager they can beat Buck and he will reluctantly give V their earnings if they win. If the expensive wager is chosen, Buck will gather his 6er posse after losing and attack V. After they defeat Buck and his friends they can take his rifle and will get €$ 24,000 from Buck's body.",
+    "affiliation": "6th Street",
+    "occupation": "6th Street Ganger, Arroyo fighting champion",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Buck_Arnold"
+  },
+  {
+    "id": 49,
+    "name": "Campo Orta",
+    "gender": "Male",
+    "directory": "campo_orta",
+    "has_images": false,
+    "images": [],
+    "description": "Campo's relative,Gustavo, grew up withJackie Welles. Both got into theValentinos, but while Jackie left, Gustavo managed to become one of the highest ranking members of the gang. Campo was fond of Jackie, and treated him as one more in the family, even after he left. At some point, Campo was detained and convicted to prison. By2077, he still had four more years to serve. During Jackie's funeral inEl Coyote Cojo, Campo sentJuan Esteban Abastowith a message to present his condolences to Jackie and the family. Gustavo Orta mentioned toMartha Youngthat Campo was extremely distraught over the...",
+    "affiliation": "Valentinos",
+    "occupation": "GangsterBoss of the Valentinos",
+    "status": "Alive (2077)",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Campo_Orta"
+  },
+  {
+    "id": 50,
+    "name": "Carl Robinson",
+    "gender": "Male",
+    "directory": "carl_robinson",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/carl_robinson/carl_robinson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/carl_robinson/carl_robinson_02.png"
+    ],
+    "description": "Carl Robinson, also known asDodger, is a high-ranking member ofBARGHESTinCyberpunk 2077:Phantom Liberty.",
+    "affiliation": "Barghest",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Carl_Robinson"
+  },
+  {
+    "id": 51,
+    "name": "Carlos Rubio",
+    "gender": "Male",
+    "directory": "carlos_rubio",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/carlos_rubio/carlos_rubio_01.png"
+    ],
+    "description": "Carlos Rubio is aValentinoshired byTim Kelly, supposed to killJude Nightfor taking his role of Jake inBushidō XI. He is found during Assault in Progress, interrogating Jude Night.",
+    "affiliation": "Valentinos",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Carlos_Rubio"
+  },
+  {
+    "id": 52,
+    "name": "Carter Smith",
+    "gender": "Male",
+    "directory": "carter_smith",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/carter_smith/carter_smith_01.png"
+    ],
+    "description": "Carter Smithwas anArasakacomputer specialist working directly as V's assistant, should V choose the Corpo lifepath.He is a capable technology specialist, but dislikes working for the Arasaka Corporation, finding their methods unethical. Carter was employed by the Arasaka Corporation's Counterintelligence Division inNight City, helmed byArthur Jenkins. Carter's mother, Mary, was extremely proud of his success, although Carter was disgusted with the objectives required by Jenkins of his employees. At some point, Carter learns of Jenkins' planned assassination ofSusan Abernathy, the Director of...",
+    "affiliation": "Arasaka",
+    "occupation": "Corpo",
+    "status": "Deceased",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Carter_Smith"
+  },
+  {
+    "id": 53,
+    "name": "Cassidy Righter",
+    "gender": "Male",
+    "directory": "cassidy_righter",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cassidy_righter/cassidy_righter_01.png"
+    ],
+    "description": "Cassidy Righterisnomadand member of theAldecaldosinCyberpunk 2077. Cassidy is a true and unfiltered person with a generally warm and fair personality. Cassidy Righter is a man of conviction, believing in a simple but true life and upholding values such as honesty and loyalty while maintaining a sarcastic humor. Cassidy described the allegiance to the family his Aldecados clan formed to be unconditional and the support among clanmembers to be an anchor in his life.Cassidy was a smoker, played the guitar, and did not use anycyberware. Cassidy became good friends with fellow AldecaldoPanam...",
+    "affiliation": "Aldecaldos",
+    "occupation": "NomadEx-soldier",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Cassidy_Righter"
+  },
+  {
+    "id": 54,
+    "name": "Cassius Ryder",
+    "gender": "Male",
+    "directory": "cassius_ryder",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cassius_ryder/cassius_ryder_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cassius_ryder/cassius_ryder_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cassius_ryder/cassius_ryder_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cassius_ryder/cassius_ryder_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cassius_ryder/cassius_ryder_05.png"
+    ],
+    "description": "Cassius Ryder is a well-known ripperdoc and a tattoo artist inNight City. In his early life he personally knew famousrocker,Johnny Silverhand. Some time later he got his ownclinic and tattoo salon, located on Pershing Street inNorthside,Watson, and created his own chain of ripperdoc clinics, all going under the nameDoc Ryder. By2077, he was very well connected with Night City'smercenaryworld, as well asfixerWakako Okadaand being known in theAfterlifecircles.He benefited from theMaxTacraid on a black ripperdoc clinic located nearby, as the people that used to visit them for services now had to...",
+    "affiliation": "Doc Ryder",
+    "occupation": "Medtech",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Cassius_Ryder"
+  },
+  {
+    "id": 55,
+    "name": "Cedric Muller",
+    "gender": "Male",
+    "directory": "cedric_muller",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/cedric_muller/cedric_muller_01.png"
+    ],
+    "description": "Cedric Muller is a member of theRed OcherNomadclan. He, along with many other members of the clan, was used as a subject inBiotechnica'sProject Nightingale. Cedric survived, however he was experiencing excruciating pain in his lungs and soon reached out to aScavengerMaciej Nakonieczny, desperate to get neuroblockers.When meeting, the Scavengers attempted to take Cedric out and harvest his impants.He succumbed tocyberpsychosiswhen they tried to kill him at their meeting spot. Cedric Muller can be encountered in a parking garage inDowntown,City CenterduringCyberpsycho Sighting: On Deaf Ears.",
+    "affiliation": "Red Ocher",
+    "occupation": "NomadCyberpsycho",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Cedric_Muller"
+  },
+  {
+    "id": 56,
+    "name": "Chang-Hoon Nam",
+    "gender": "Male",
+    "directory": "chang-hoon_nam",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chang-hoon_nam/chang-hoon_nam_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chang-hoon_nam/chang-hoon_nam_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chang-hoon_nam/chang-hoon_nam_03.png"
+    ],
+    "description": "Nam has been an associate ofWakako Okadafor years, as he was hand picked by her to do business. Ever since, he hasn't let her down once. Sometime in2077, he started digging into finding otherNetrunnersthat were roaming TheNet, in particular one by the name ofSpectral Kid, whom he believes is a reckless teenage 'runner who needs guidance before he gets himself into too much trouble. Spectral Kid was not to be reasoned with, however, and eventually got himself killed whilst poking around inVoodoo Boysterritory. At one point Nam was contacted by a netrunner in distress named Dante, who had...",
+    "affiliation": "Wakako Okada",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Chang-Hoon_Nam"
+  },
+  {
+    "id": 57,
+    "name": "Charles Bucks",
+    "gender": "Male",
+    "directory": "charles_bucks",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/charles_bucks/charles_bucks_01.png"
+    ],
+    "description": "Charles Bucksis aRipperdocinCyberpunk 2077. He operates out of his clinic in northernKabuki. On the surface, Charles Bucks seems to be a ripperdoc like any other. However, thecyberwarehe offers for sale is procured byScavengers, with whom he has set up an illegal clinic in the basement of his establishment.",
+    "affiliation": "Unknown",
+    "occupation": "Ripperdoc",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Charles_Bucks"
+  },
+  {
+    "id": 58,
+    "name": "Charles Graham",
+    "gender": "Male",
+    "directory": "charles_graham",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/charles_graham/charles_graham_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/charles_graham/charles_graham_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Barghest",
+    "occupation": "Jago's bodyguard",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Charles_Graham"
+  },
+  {
+    "id": 59,
+    "name": "Charles Wilson",
+    "gender": "Male",
+    "directory": "charles_wilson",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/charles_wilson/charles_wilson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/charles_wilson/charles_wilson_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "NCPD",
+    "occupation": "Lawman",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Charles_Wilson"
+  },
+  {
+    "id": 60,
+    "name": "Chase Coley",
+    "gender": "Male",
+    "directory": "chase_coley",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chase_coley/chase_coley_01.jpg"
+    ],
+    "description": "Chase Coley is a construction worker, husband to a woman named Mary, and father of a child named Charlie. Chase suffered from stress due to the toxic environment caused by his manager Tom Selvig, despite him claiming that he is charitable. To help him, Tom gave Chase some military-grade implants to boost his work ethics, but barely did anything. Chase was later given aMilitech Centaur, which worried a fellow coworker, warning him to not use the exoskeleton and the other implants he was chipped with, or else he would break his spine. However, Chase never listened due to work pressure, which...",
+    "affiliation": "Unknown",
+    "occupation": "Cyberpsycho",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Chase_Coley"
+  },
+  {
+    "id": 61,
+    "name": "Chester Bennett",
+    "gender": "Male",
+    "directory": "chester_bennett",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chester_bennett/chester_bennett_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chester_bennett/chester_bennett_02.png"
+    ],
+    "description": "Chester Bennettis a high-ranking member ofBARGHESTinCyberpunk 2077:Phantom Liberty.",
+    "affiliation": "Militech",
+    "occupation": "Solo",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Chester_Bennett"
+  },
+  {
+    "id": 62,
+    "name": "Chester Hamilton",
+    "gender": "Male",
+    "directory": "chester_hamilton",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/male/chester_hamilton/chester_hamilton_01.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Unknown",
+    "occupation": "Cyberjunkie",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Chester_Hamilton"
+  },
+  {
+    "id": 63,
     "name": "Ainara Álvarez",
     "gender": "Female",
     "directory": "ainara_álvarez",
@@ -601,7 +985,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Ainara_%C3%81lvarez"
   },
   {
-    "id": 39,
+    "id": 64,
     "name": "Alena Xenakis",
     "gender": "Female",
     "directory": "alena_xenakis",
@@ -620,7 +1004,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Alena_Xenakis"
   },
   {
-    "id": 40,
+    "id": 65,
     "name": "Altiera Cunningham",
     "gender": "Female",
     "directory": "altiera_cunningham",
@@ -638,7 +1022,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Altiera_Cunningham"
   },
   {
-    "id": 41,
+    "id": 66,
     "name": "Ana Friedman",
     "gender": "Female",
     "directory": "ana_friedman",
@@ -655,7 +1039,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Ana_Friedman"
   },
   {
-    "id": 42,
+    "id": 67,
     "name": "Angelica Whelan",
     "gender": "Female",
     "directory": "angelica_whelan",
@@ -670,7 +1054,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Angelica_Whelan"
   },
   {
-    "id": 43,
+    "id": 68,
     "name": "Angie Mielech",
     "gender": "Female",
     "directory": "angie_mielech",
@@ -684,7 +1068,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Angie_Mielech"
   },
   {
-    "id": 44,
+    "id": 69,
     "name": "Anna Hamill",
     "gender": "Female",
     "directory": "anna_hamill",
@@ -701,7 +1085,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Anna_Hamill"
   },
   {
-    "id": 45,
+    "id": 70,
     "name": "Anna Nox",
     "gender": "Female",
     "directory": "anna_nox",
@@ -720,7 +1104,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Anna_Nox"
   },
   {
-    "id": 46,
+    "id": 71,
     "name": "Annie Capolino",
     "gender": "Female",
     "directory": "annie_capolino",
@@ -733,7 +1117,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Annie_Capolino"
   },
   {
-    "id": 47,
+    "id": 72,
     "name": "Arabelle Luvasha",
     "gender": "Female",
     "directory": "arabelle_luvasha",
@@ -745,7 +1129,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Arabelle_Luvasha"
   },
   {
-    "id": 48,
+    "id": 73,
     "name": "Aurore Cassel",
     "gender": "Female",
     "directory": "aurore_cassel",
@@ -764,7 +1148,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Aurore_Cassel"
   },
   {
-    "id": 49,
+    "id": 74,
     "name": "Ayo Zarin",
     "gender": "Female",
     "directory": "ayo_zarin",
@@ -779,7 +1163,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Ayo_Zarin"
   },
   {
-    "id": 50,
+    "id": 75,
     "name": "Bara Nova",
     "gender": "Female",
     "directory": "bara_nova",
@@ -794,7 +1178,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Bara_Nova"
   },
   {
-    "id": 51,
+    "id": 76,
     "name": "Barbara Okoye",
     "gender": "Female",
     "directory": "barbara_okoye",
@@ -808,7 +1192,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Barbara_Okoye"
   },
   {
-    "id": 52,
+    "id": 77,
     "name": "Beatrice Ellen Trieste",
     "gender": "Female",
     "directory": "beatrice_ellen_trieste",
@@ -827,7 +1211,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Beatrice_Ellen_Trieste"
   },
   {
-    "id": 53,
+    "id": 78,
     "name": "Bes Isis",
     "gender": "Female",
     "directory": "bes_isis",
@@ -845,7 +1229,168 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Bes_Isis"
   },
   {
-    "id": 54,
+    "id": 79,
+    "name": "Blue Moon",
+    "gender": "Female",
+    "directory": "blue_moon",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/blue_moon/blue_moon_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/blue_moon/blue_moon_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/blue_moon/blue_moon_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/blue_moon/blue_moon_04.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/blue_moon/blue_moon_05.jpg"
+    ],
+    "description": "Blue Moon(ブルームーン),orAoi Tsuki(青い月), is the pseudonym of one of the members of theJapanesegirl groupUs Cracks. AJapanesedescendent born in theNUSA, Blue Moon was among the three girls chosen to sign a deal withMSM MediaCorp, who at the time were looking for candidates with the perfect blend of charisma, talent and stage presence in order to complete against the more successfulAIsmaking music - the other two beingRed MenaceandPurple Force. NamedUs Cracks, the band swiftly became a world sensation. Being part of a globally-followed music sensation, Blue is not a stranger to psychofans. Once one...",
+    "affiliation": "Us Cracks",
+    "occupation": "Japanese idol",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Blue_Moon"
+  },
+  {
+    "id": 80,
+    "name": "Bree Whitney",
+    "gender": "Female",
+    "directory": "bree_whitney",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bree_whitney/bree_whitney_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bree_whitney/bree_whitney_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/bree_whitney/bree_whitney_03.png"
+    ],
+    "description": "In2077, Bree had to leaveNight Cityafter theNCPDissued an order for her capture. She managed to get access intoDogtownthrough thenorthern gate. At the end ofShot by Both Sides, Bree can survive the encounter or be killed byVorDante Caruso.",
+    "affiliation": "Militech",
+    "occupation": "Media",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Bree_Whitney"
+  },
+  {
+    "id": 81,
+    "name": "Briana Dolson",
+    "gender": "Female",
+    "directory": "briana_dolson",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/briana_dolson/briana_dolson_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/briana_dolson/briana_dolson_02.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Unknown",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Briana_Dolson"
+  },
+  {
+    "id": 82,
+    "name": "Brigitte",
+    "gender": "Female",
+    "directory": "brigitte",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/brigitte/brigitte_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/brigitte/brigitte_02.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/brigitte/brigitte_03.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/brigitte/brigitte_04.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/brigitte/brigitte_05.jpg"
+    ],
+    "description": "Brigitte, more commonly known asMaman Brigitteor justMama, is aNetrunnerand the leader of theVoodoo Boysoperating inPacificainCyberpunk 2077. AfterHaitiwas decimated by natural disasters, Brigitte, along with many other Haitians, moved into Pacifica, a run-down district ofNight City. Like most of the Voodoo Boys, Brigitte is a dedicated Netrunner who was determined to uncover the secrets of theOld Net. She would often probe theBlackwallin the hopes of making contact with the rogue intelligences beyond the barrier, in order to find a safe way to gain passage through it. Believing that...",
+    "affiliation": "Voodoo Boys",
+    "occupation": "Netrunner",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Brigitte"
+  },
+  {
+    "id": 83,
+    "name": "Brittany Hayes",
+    "gender": "Female",
+    "directory": "brittany_hayes",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/brittany_hayes/brittany_hayes_01.png"
+    ],
+    "description": "Sem descrição disponível.",
+    "affiliation": "Unknown",
+    "occupation": "Joytoy",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Brittany_Hayes"
+  },
+  {
+    "id": 84,
+    "name": "Camila Martinez",
+    "gender": "Female",
+    "directory": "camila_martinez",
+    "has_images": false,
+    "images": [],
+    "description": "Camila Martinez is a member of theValentinos, a gang fixated on camaraderie and Chicano culture.",
+    "affiliation": "Valentinos",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Camila_Martinez"
+  },
+  {
+    "id": 85,
+    "name": "Carol Emeka",
+    "gender": "Female",
+    "directory": "carol_emeka",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/carol_emeka/carol_emeka_01.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/carol_emeka/carol_emeka_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/carol_emeka/carol_emeka_03.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/carol_emeka/carol_emeka_04.png"
+    ],
+    "description": "Like many members of the Aldecaldos, Carol is a veteran of theUnification War, from which she has unpleasant memories of being stuffed in panzers. In 2077, Carol's clan leaderSaul Brightwas kidnapped during a patrol by aRaffen Shivgang called theWraiths. A distressed Carol acted in his place while worrying about Saul's wellbeing, the clan's supplies being stuck outsideReno, and the prospect of the Wraiths returning due to the vulnerable state of the camp.Panam Palmer, a fellow Aldecaldo who had seperated from the clan earlier, would not stand with their inactivity and took it upon herself to...",
+    "affiliation": "Aldecaldos",
+    "occupation": "NomadTechie",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Carol_Emeka"
+  },
+  {
+    "id": 86,
+    "name": "Charlene Fox",
+    "gender": "Female",
+    "directory": "charlene_fox",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/charlene_fox/charlene_fox_01.png"
+    ],
+    "description": "She has a tattoo on her lower abdomen reading \"судьба\" (sud'ba), meaning \"fate\" or \"destiny\" in Russian.",
+    "affiliation": "Unknown",
+    "occupation": "Joytoy",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Charlene_Fox"
+  },
+  {
+    "id": 87,
+    "name": "Cheri Nowlin",
+    "gender": "Female",
+    "directory": "cheri_nowlin",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/cheri_nowlin/cheri_nowlin_01.png"
+    ],
+    "description": "Cheri is a receptionist atCloudsnightclub inMegabuilding H8inJapantown,Westbrook.",
+    "affiliation": "Clouds",
+    "occupation": "Receptionist",
+    "status": "Dependent",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Cheri_Nowlin"
+  },
+  {
+    "id": 88,
+    "name": "Christine Markov",
+    "gender": "Female",
+    "directory": "christine_markov",
+    "has_images": true,
+    "images": [
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/christine_markov/christine_markov_01.jpg",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/christine_markov/christine_markov_02.png",
+      "https://jose-pires-neto.github.io/Cyberpunk-2077-API/images/characters/sex/female/christine_markov/christine_markov_03.jpg"
+    ],
+    "description": "In her younger years, Markov used to date amercwho helped her set up her stand in the market, before he disappeared without explanation. This lead Markov to believe he was probably dead. Christine has her own market stall at theCherry Blossom Market, where she sells and repairs tech. She has a former employee by the name ofPéter Horváth, who was being investigated byNCPDdetectiveRiver Wardand mercenaryV.",
+    "affiliation": "Unknown",
+    "occupation": "Junk Vendor",
+    "status": "Alive",
+    "wiki_url": "https://cyberpunk.fandom.com/wiki/Christine_Markov"
+  },
+  {
+    "id": 89,
     "name": "1R-0NC-LAD",
     "gender": "Unknown",
     "directory": "1r-0nc-lad",
@@ -857,7 +1402,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/1R-0NC-LAD"
   },
   {
-    "id": 55,
+    "id": 90,
     "name": "Alec Johnson",
     "gender": "Unknown",
     "directory": "alec_johnson",
@@ -871,7 +1416,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Alec_Johnson"
   },
   {
-    "id": 56,
+    "id": 91,
     "name": "Ash",
     "gender": "Unknown",
     "directory": "ash",
@@ -886,7 +1431,7 @@
     "wiki_url": "https://cyberpunk.fandom.com/wiki/Ash"
   },
   {
-    "id": 57,
+    "id": 92,
     "name": "Barry Lewis",
     "gender": "Unknown",
     "directory": "barry_lewis",
