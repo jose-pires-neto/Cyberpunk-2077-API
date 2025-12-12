@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk API Editor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CYBERPUNK <span class="accent">API</span> EDITOR</h1>
+        <p class="subtitle">Night City Database Management System</p>
+    </header>
+
+    <nav class="category-nav">
+        <button class="category-btn active" data-category="characters">
+            <span class="icon">👤</span> Characters
+        </button>
+        <button class="category-btn" data-category="gangs">
+            <span class="icon">⚔️</span> Gangs
+        </button>
+        <button class="category-btn" data-category="districts">
+            <span class="icon">🏙️</span> Districts
+        </button>
+    </nav>
+
+    <main>
+        <div class="items-container" id="items-container">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Carregando dados...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Edição -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="edit-modal">
+            <div class="modal-header">
+                <h2 id="modal-title">Editar Item</h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="image-preview" id="image-preview"></div>
+                <form id="edit-form">
+                    <input type="hidden" id="item-id">
+                    <input type="hidden" id="item-category">
+
+                    <div class="form-group">
+                        <label for="item-name">Nome</label>
+                        <input type="text" id="item-name" readonly>
+                    </div>
+
+                    <div class="form-group" id="gender-group">
+                        <label for="item-gender">Gênero</label>
+                        <select id="item-gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="item-description">Descrição</label>
+                        <textarea id="item-description" rows="4" placeholder="Digite a descrição..."></textarea>
+                    </div>
+
+                    <div class="form-group" id="affiliation-group">
+                        <label for="item-affiliation">Afiliação</label>
+                        <select id="item-affiliation">
+                            <option value="">Selecione uma afiliação...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancel-btn">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Salvar</span>
+                            <span class="btn-loading" style="display:none;">Salvando...</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de Notificação -->
+    <div class="toast" id="toast">
+        <span class="toast-message"></span>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+[
+    {
+        "id": "mercenary",
+        "name": "Mercenário",
+        "category": "profession",
+        "description": "Soldados de aluguel que trabalham por eddies, sem lealdade fixa.",
+        "color": "#00f0ff"
+    },
+    {
+        "id": "corpo",
+        "name": "Corporação",
+        "category": "profession",
+        "description": "Funcionários ou ex-funcionários de megacorporações como Arasaka, Militech, Kang Tao.",
+        "color": "#ff3366"
+    },
+    {
+        "id": "nomad",
+        "name": "Nômade",
+        "category": "profession",
+        "description": "Membros de clãs nômades que vivem fora das cidades, como os Aldecaldos.",
+        "color": "#fcee0a"
+    },
+    {
+        "id": "street_kid",
+        "name": "Street Kid",
+        "category": "profession",
+        "description": "Nascidos e criados nas ruas de Night City, conhecem cada beco e esquema.",
+        "color": "#39ff14"
+    },
+    {
+        "id": "fixer",
+        "name": "Fixer",
+        "category": "profession",
+        "description": "Intermediários que conectam mercenários a trabalhos e recursos.",
+        "color": "#ff00ff"
+    },
+    {
+        "id": "netrunner",
+        "name": "Netrunner",
+        "category": "profession",
+        "description": "Hackers especializados em invasão de sistemas e a NET.",
+        "color": "#00ffff"
+    },
+    {
+        "id": "media",
+        "name": "Mídia",
+        "category": "profession",
+        "description": "Jornalistas e influenciadores que buscam a verdade ou manipulam a opinião pública.",
+        "color": "#ff9900"
+    },
+    {
+        "id": "ncpd",
+        "name": "NCPD",
+        "category": "law",
+        "description": "Força policial de Night City, muitas vezes corrupta.",
+        "color": "#3366ff"
+    },
+    {
+        "id": "maxtac",
+        "name": "MaxTac",
+        "category": "law",
+        "description": "Unidade de elite da NCPD especializada em lidar com cyberpsicóticos.",
+        "color": "#cc0000"
+    },
+    {
+        "id": "rockerboy",
+        "name": "Rockerboy",
+        "category": "profession",
+        "description": "Artistas rebeldes que usam música e arte para inspirar mudanças.",
+        "color": "#ff6600"
+    },
+    {
+        "id": "solo",
+        "name": "Solo",
+        "category": "profession",
+        "description": "Combatentes de elite, guarda-costas e assassinos profissionais.",
+        "color": "#cc3300"
+    },
+    {
+        "id": "techie",
+        "name": "Techie",
+        "category": "profession",
+        "description": "Especialistas em tecnologia, ripperdocs e mecânicos.",
+        "color": "#66ccff"
+    },
+    {
+        "id": "civilian",
+        "name": "Civil",
+        "category": "other",
+        "description": "Cidadãos comuns de Night City tentando sobreviver.",
+        "color": "#999999"
+    },
+    {
+        "id": "unknown",
+        "name": "Desconhecido",
+        "category": "other",
+        "description": "Afiliação não identificada ou misteriosa.",
+        "color": "#666666"
+    },
+    {
+        "id": "maelstrom",
+        "name": "Maelstrom",
+        "category": "gang",
+        "description": "Gangue obcecada por cyberware, conhecidos por suas modificações extremas e violência.",
+        "color": "#ff0000"
+    },
+    {
+        "id": "tyger_claws",
+        "name": "Tyger Claws",
+        "category": "gang",
+        "description": "Gangue japonesa que controla Japantown, conhecidos por suas katanas e motos.",
+        "color": "#ff4d6d"
+    },
+    {
+        "id": "valentinos",
+        "name": "Valentinos",
+        "category": "gang",
+        "description": "Gangue latina de Heywood, valorizam honra, família e carros modificados.",
+        "color": "#ffd700"
+    },
+    {
+        "id": "6th_street",
+        "name": "6th Street",
+        "category": "gang",
+        "description": "Ex-veteranos patriotas de Santo Domingo, se consideram defensores do povo.",
+        "color": "#1e90ff"
+    },
+    {
+        "id": "animals",
+        "name": "Animals",
+        "category": "gang",
+        "description": "Gangue focada em força física, usam esteroides e poucos implantes cibernéticos.",
+        "color": "#32cd32"
+    },
+    {
+        "id": "voodoo_boys",
+        "name": "Voodoo Boys",
+        "category": "gang",
+        "description": "Netrunners haitianos de Pacifica, mestres em hacking e conexão com a Blackwall.",
+        "color": "#9400d3"
+    },
+    {
+        "id": "the_mox",
+        "name": "The Mox",
+        "category": "gang",
+        "description": "Gangue que protege trabalhadores do sexo, fundada após a morte de Lizzie Borden.",
+        "color": "#00ced1"
+    },
+    {
+        "id": "scavengers",
+        "name": "Scavengers",
+        "category": "gang",
+        "description": "Criminosos brutais que sequestram pessoas para roubar seus implantes.",
+        "color": "#8b0000"
+    },
+    {
+        "id": "wraiths",
+        "name": "Wraiths",
+        "category": "gang",
+        "description": "Nômades renegados e violentos que atacam viajantes nas Badlands.",
+        "color": "#696969"
+    },
+    {
+        "id": "aldecaldos",
+        "name": "Aldecaldos",
+        "category": "gang",
+        "description": "Clã nômade leal com fortes laços familiares, especialistas em veículos.",
+        "color": "#ff8c00"
+    },
+    {
+        "id": "barghest",
+        "name": "Barghest",
+        "category": "gang",
+        "description": "Milícia paramilitar de Dogtown, liderada pelo Coronel Kurt Hansen.",
+        "color": "#00ff00"
+    },
+    {
+        "id": "arasaka",
+        "name": "Arasaka",
+        "category": "corporation",
+        "description": "Megacorporação japonesa, uma das mais poderosas do mundo.",
+        "color": "#ff0033"
+    },
+    {
+        "id": "militech",
+        "name": "Militech",
+        "category": "corporation",
+        "description": "Maior contratante militar do mundo, rival direta da Arasaka.",
+        "color": "#004d00"
+    },
+    {
+        "id": "kang_tao",
+        "name": "Kang Tao",
+        "category": "corporation",
+        "description": "Corporação chinesa especializada em armas inteligentes.",
+        "color": "#cc0066"
+    },
+    {
+        "id": "biotechnica",
+        "name": "Biotechnica",
+        "category": "corporation",
+        "description": "Corporação focada em biotecnologia e agricultura.",
+        "color": "#00cc00"
+    },
+    {
+        "id": "trauma_team",
+        "name": "Trauma Team",
+        "category": "corporation",
+        "description": "Serviço médico de emergência armado para clientes premium.",
+        "color": "#ff6b6b"
+    },
+    {
+        "id": "afterlife",
+        "name": "Afterlife",
+        "category": "other",
+        "description": "Frequentadores do icônico bar de mercenários de Night City.",
+        "color": "#ff1493"
+    }
+]
