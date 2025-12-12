@@ -388,13 +388,39 @@
             <!-- Modal Body -->
             <div class="flex-1 overflow-y-auto p-4 md:p-6">
                 <div class="grid md:grid-cols-2 gap-6">
-                    <!-- Images -->
-                    <div>
-                        <div id="modal-main-image" class="aspect-square bg-cyber-black rounded-lg overflow-hidden mb-4">
+                    <!-- Images Carousel -->
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div id="modal-main-image"
+                            class="aspect-square bg-cyber-black rounded-lg overflow-hidden relative">
                             <img src="" alt="" class="w-full h-full object-cover">
+
+                            <!-- Navigation Arrows -->
+                            <button onclick="prevImage()" id="carousel-prev"
+                                class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/60 hover:bg-cyber-cyan/80 rounded-full flex items-center justify-center text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                            <button onclick="nextImage()" id="carousel-next"
+                                class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/60 hover:bg-cyber-cyan/80 rounded-full flex items-center justify-center text-white transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+
+                            <!-- Image Counter -->
+                            <div id="carousel-counter"
+                                class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded font-mono">
+                                1 / 3
+                            </div>
                         </div>
-                        <div id="modal-thumbnails" class="flex gap-2 overflow-x-auto pb-2">
-                            <!-- Thumbnails -->
+
+                        <!-- Thumbnail Indicators -->
+                        <div id="modal-thumbnails" class="flex justify-center gap-2 mt-4 flex-wrap">
+                            <!-- Dots/Thumbnails -->
                         </div>
                     </div>
 
@@ -485,13 +511,23 @@
         }
 
         // ============================================
-        // Gallery Rendering
+        // Gallery Rendering with Pagination
         // ============================================
+        const IMAGES_PER_PAGE = 50;
+        let displayedImages = [];
+        let currentPage = 0;
+        let isLoadingMore = false;
+        let shuffledImages = [];
+
         function renderGallery() {
             const grid = document.getElementById('masonry-grid');
-            const shuffled = shuffleArray([...allImages]);
 
-            if (shuffled.length === 0) {
+            // Shuffle all images
+            shuffledImages = shuffleArray([...allImages]);
+            currentPage = 0;
+            displayedImages = [];
+
+            if (shuffledImages.length === 0) {
                 document.getElementById('empty-state').classList.remove('hidden');
                 grid.innerHTML = '';
                 return;
@@ -499,8 +535,32 @@
 
             document.getElementById('empty-state').classList.add('hidden');
 
-            grid.innerHTML = shuffled.map(item => `
-                <div class="masonry-item">
+            // Load first batch
+            grid.innerHTML = '';
+            loadMoreImages();
+
+            // Setup infinite scroll observer
+            setupInfiniteScroll();
+        }
+
+        function loadMoreImages() {
+            if (isLoadingMore) return;
+
+            const grid = document.getElementById('masonry-grid');
+            const startIndex = currentPage * IMAGES_PER_PAGE;
+            const endIndex = Math.min(startIndex + IMAGES_PER_PAGE, shuffledImages.length);
+
+            if (startIndex >= shuffledImages.length) return;
+
+            isLoadingMore = true;
+
+            const batch = shuffledImages.slice(startIndex, endIndex);
+
+            batch.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'masonry-item opacity-0 translate-y-4';
+                div.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                div.innerHTML = `
                     <div onclick="openModal(${item.id})" class="card-hover cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-cyber-cyan/50 bg-cyber-dark group relative">
                         <div class="relative overflow-hidden">
                             <img src="${item.imageUrl}" alt="${item.name}" class="w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
@@ -511,8 +571,43 @@
                             ${item.affiliation ? `<p class="text-xs text-cyber-cyan truncate">${item.affiliation}</p>` : ''}
                         </div>
                     </div>
-                </div>
-            `).join('');
+                `;
+                grid.appendChild(div);
+
+                // Animate in with stagger
+                setTimeout(() => {
+                    div.classList.remove('opacity-0', 'translate-y-4');
+                }, 50 + (index * 30));
+            });
+
+            displayedImages = displayedImages.concat(batch);
+            currentPage++;
+            isLoadingMore = false;
+        }
+
+        function setupInfiniteScroll() {
+            // Remove old observer if exists
+            if (window.galleryObserver) {
+                window.galleryObserver.disconnect();
+            }
+
+            // Create sentinel element
+            let sentinel = document.getElementById('scroll-sentinel');
+            if (!sentinel) {
+                sentinel = document.createElement('div');
+                sentinel.id = 'scroll-sentinel';
+                sentinel.className = 'h-20';
+                document.getElementById('masonry-grid').parentNode.appendChild(sentinel);
+            }
+
+            // Setup IntersectionObserver
+            window.galleryObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !isLoadingMore) {
+                    loadMoreImages();
+                }
+            }, { rootMargin: '200px' });
+
+            window.galleryObserver.observe(sentinel);
         }
 
         function shuffleImages() {
@@ -524,6 +619,9 @@
                 renderGallery();
                 grid.style.opacity = '1';
                 grid.style.transform = 'translateY(0)';
+
+                // Scroll to content section
+                document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
             }, 300);
         }
 
@@ -536,11 +634,18 @@
         }
 
         // ============================================
-        // Modal
+        // Modal Functions
         // ============================================
+        let currentImageIndex = 0;
+        let currentCharacterImages = [];
+
         function openModal(characterId) {
             const char = allCharacters.find(c => c.id === characterId);
             if (!char) return;
+
+            // Store images for carousel
+            currentCharacterImages = char.images || [];
+            currentImageIndex = 0;
 
             document.getElementById('modal-name').textContent = char.name;
             document.getElementById('modal-char-name').textContent = char.name;
@@ -564,17 +669,28 @@
                 affSection.classList.add('hidden');
             }
 
-            // Main image
-            const mainImg = document.getElementById('modal-main-image').querySelector('img');
-            if (char.images && char.images.length > 0) {
-                mainImg.src = char.images[0];
-                mainImg.alt = char.name;
+            // Show/hide carousel arrows based on image count
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            const counter = document.getElementById('carousel-counter');
+
+            if (currentCharacterImages.length <= 1) {
+                prevBtn.classList.add('hidden');
+                nextBtn.classList.add('hidden');
+                counter.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+                nextBtn.classList.remove('hidden');
+                counter.classList.remove('hidden');
             }
 
-            // Thumbnails
+            // Set initial image
+            updateCarouselImage();
+
+            // Generate thumbnail dots
             const thumbs = document.getElementById('modal-thumbnails');
-            thumbs.innerHTML = (char.images || []).map((img, i) => `
-                <button onclick="setMainImage('${img}')" class="flex-shrink-0 w-16 h-16 rounded overflow-hidden border-2 ${i === 0 ? 'border-cyber-cyan' : 'border-white/20'} hover:border-cyber-cyan transition-colors">
+            thumbs.innerHTML = currentCharacterImages.map((img, i) => `
+                <button onclick="goToImage(${i})" class="w-12 h-12 rounded overflow-hidden border-2 ${i === 0 ? 'border-cyber-cyan' : 'border-white/20'} hover:border-cyber-cyan transition-colors">
                     <img src="${img}" alt="" class="w-full h-full object-cover">
                 </button>
             `).join('');
@@ -583,14 +699,19 @@
             document.body.style.overflow = 'hidden';
         }
 
-        function setMainImage(url) {
+        function updateCarouselImage() {
+            if (currentCharacterImages.length === 0) return;
+
             const mainImg = document.getElementById('modal-main-image').querySelector('img');
-            mainImg.src = url;
+            mainImg.src = currentCharacterImages[currentImageIndex];
+
+            // Update counter
+            const counter = document.getElementById('carousel-counter');
+            counter.textContent = `${currentImageIndex + 1} / ${currentCharacterImages.length}`;
 
             // Update thumbnail borders
-            document.querySelectorAll('#modal-thumbnails button').forEach(btn => {
-                const img = btn.querySelector('img');
-                if (img.src === url) {
+            document.querySelectorAll('#modal-thumbnails button').forEach((btn, i) => {
+                if (i === currentImageIndex) {
                     btn.classList.remove('border-white/20');
                     btn.classList.add('border-cyber-cyan');
                 } else {
@@ -600,14 +721,44 @@
             });
         }
 
+        function nextImage() {
+            if (currentCharacterImages.length === 0) return;
+            currentImageIndex = (currentImageIndex + 1) % currentCharacterImages.length;
+            updateCarouselImage();
+        }
+
+        function prevImage() {
+            if (currentCharacterImages.length === 0) return;
+            currentImageIndex = (currentImageIndex - 1 + currentCharacterImages.length) % currentCharacterImages.length;
+            updateCarouselImage();
+        }
+
+        function goToImage(index) {
+            currentImageIndex = index;
+            updateCarouselImage();
+        }
+
+        function setMainImage(url) {
+            const index = currentCharacterImages.indexOf(url);
+            if (index !== -1) {
+                currentImageIndex = index;
+                updateCarouselImage();
+            }
+        }
+
         function closeModal() {
             document.getElementById('character-modal').classList.add('hidden');
             document.body.style.overflow = '';
+            currentImageIndex = 0;
+            currentCharacterImages = [];
         }
 
-        // Close on Escape
+        // Close on Escape, navigate with arrows
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
+            if (document.getElementById('character-modal').classList.contains('hidden')) return;
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
         });
 
         // ============================================
