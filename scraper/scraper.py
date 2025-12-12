@@ -677,7 +677,7 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='Scraper Wiki Cyberpunk 2077 v5')
-    parser.add_argument('--limit', type=int, default=20, help='Limite de personagens')
+    parser.add_argument('--limit', type=int, default=None, help='Limite de personagens (default: sem limite)')
     parser.add_argument('--no-cache', action='store_true', help='Desabilita cache')
     parser.add_argument('--browser', action='store_true', help='Usa navegador para mais imagens')
     parser.add_argument('--all', action='store_true', help='Baixa todos os personagens (inclui existentes)')
