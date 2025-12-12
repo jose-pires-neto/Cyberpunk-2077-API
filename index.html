@@ -89,6 +89,38 @@
             margin-bottom: 16px;
         }
 
+        /* Tetris-like animation for new items */
+        @keyframes slideUpFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(60px) scale(0.95);
+            }
+
+            60% {
+                transform: translateY(-5px) scale(1.01);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .masonry-item.animate-in {
+            animation: slideUpFadeIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* Image lazy load fade */
+        .masonry-item img {
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .masonry-item img.loaded {
+            opacity: 1;
+        }
+
+
         /* Glitch Effect */
         @keyframes glitch {
 
@@ -510,50 +542,113 @@
         const API_BASE = 'docs/api/v1';
 
         // State
+        let currentCategory = 'all'; // 'all', 'characters', 'gangs', 'districts'
         let allCharacters = [];
+        let allGangs = [];
+        let allDistricts = [];
         let allImages = [];
+        let displayedImageUrls = new Set(); // Evita duplicatas
 
         // ============================================
         // Initialization
         // ============================================
         document.addEventListener('DOMContentLoaded', async () => {
-            await loadData();
+            await loadAllData();
             renderGallery();
         });
 
-        async function loadData() {
+        async function loadAllData() {
             showLoading(true);
             try {
-                const response = await fetch(`${API_BASE}/characters.json`);
-                const rawCharacters = await response.json();
+                // Carrega todos os dados em paralelo
+                const [charsRes, gangsRes, distRes] = await Promise.all([
+                    fetch(`${API_BASE}/characters.json`),
+                    fetch(`${API_BASE}/gangs.json`),
+                    fetch(`${API_BASE}/districts.json`)
+                ]);
 
-                // Filtra apenas personagens COM imagens
-                allCharacters = rawCharacters.filter(char =>
-                    char.has_images !== false &&
-                    char.images &&
-                    char.images.length > 0
-                );
+                const [rawChars, rawGangs, rawDists] = await Promise.all([
+                    charsRes.json(),
+                    gangsRes.json(),
+                    distRes.json()
+                ]);
 
-                // Extract all images
-                allImages = [];
-                allCharacters.forEach(char => {
-                    if (char.images) {
-                        char.images.forEach(img => {
-                            allImages.push({ ...char, imageUrl: img });
-                        });
-                    }
-                });
+                // Filtra itens COM imagens
+                allCharacters = rawChars.filter(c => c.images && c.images.length > 0);
+                allGangs = rawGangs.filter(g => g.images && g.images.length > 0);
+                allDistricts = rawDists.filter(d => d.images && d.images.length > 0);
 
                 updateStats();
+                buildImageList();
             } catch (error) {
                 console.error('Error loading data:', error);
             }
             showLoading(false);
         }
 
+        function buildImageList() {
+            allImages = [];
+            displayedImageUrls.clear();
+
+            const addImages = (items, type) => {
+                items.forEach(item => {
+                    if (item.images) {
+                        item.images.forEach(img => {
+                            // Evita duplicatas
+                            if (!displayedImageUrls.has(img)) {
+                                displayedImageUrls.add(img);
+                                allImages.push({
+                                    ...item,
+                                    imageUrl: img,
+                                    itemType: type
+                                });
+                            }
+                        });
+                    }
+                });
+            };
+
+            // Adiciona conforme a categoria selecionada
+            if (currentCategory === 'all' || currentCategory === 'characters') {
+                addImages(allCharacters, 'character');
+            }
+            if (currentCategory === 'all' || currentCategory === 'gangs') {
+                addImages(allGangs, 'gang');
+            }
+            if (currentCategory === 'all' || currentCategory === 'districts') {
+                addImages(allDistricts, 'district');
+
+                // Adiciona SUBDISTRITOS também
+                allDistricts.forEach(district => {
+                    if (district.subdistricts && district.subdistricts.length > 0) {
+                        district.subdistricts.forEach(sub => {
+                            if (sub.images && sub.images.length > 0) {
+                                sub.images.forEach(img => {
+                                    if (!displayedImageUrls.has(img)) {
+                                        displayedImageUrls.add(img);
+                                        allImages.push({
+                                            ...sub,
+                                            id: `${district.id}-${sub.name}`, // ID único
+                                            parentDistrict: district.name,
+                                            imageUrl: img,
+                                            itemType: 'subdistrict'
+                                        });
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+
         function updateStats() {
             document.getElementById('stat-characters').textContent = allCharacters.length;
-            document.getElementById('stat-images').textContent = allImages.length;
+            document.getElementById('stat-images').textContent =
+                allCharacters.reduce((acc, c) => acc + (c.images?.length || 0), 0) +
+                allGangs.reduce((acc, g) => acc + (g.images?.length || 0), 0) +
+                allDistricts.reduce((acc, d) => acc + (d.images?.length || 0), 0);
         }
 
         // ============================================
@@ -603,33 +698,50 @@
             const batch = shuffledImages.slice(startIndex, endIndex);
 
             batch.forEach((item, index) => {
+                // Compute badge info
+                const badgeClass =
+                    item.itemType === 'character' ? 'bg-cyber-cyan/80 text-cyber-black' :
+                        item.itemType === 'gang' ? 'bg-cyber-red/80 text-white' :
+                            item.itemType === 'subdistrict' ? 'bg-cyber-green/80 text-cyber-black' :
+                                'bg-cyber-yellow/80 text-cyber-black';
+                const badgeEmoji =
+                    item.itemType === 'character' ? '👤' :
+                        item.itemType === 'gang' ? '🔫' :
+                            item.itemType === 'subdistrict' ? '📍' : '🏙️';
+                const subtitle =
+                    item.affiliation ? `<p class="text-xs text-cyber-cyan truncate">${item.affiliation}</p>` :
+                        item.parentDistrict ? `<p class="text-xs text-cyber-green truncate">${item.parentDistrict}</p>` :
+                            item.territory ? `<p class="text-xs text-cyber-magenta truncate">${item.territory}</p>` : '';
+
                 const div = document.createElement('div');
-                div.className = 'masonry-item opacity-0 translate-y-4';
-                div.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                div.className = 'masonry-item';
                 div.innerHTML = `
-                    <div onclick="openModal(${item.id})" class="card-hover cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-cyber-cyan/50 bg-cyber-dark group relative">
+                    <div onclick="openModal('${item.id}', '${item.itemType}')" class="card-hover cursor-pointer rounded-lg overflow-hidden border border-white/10 hover:border-cyber-cyan/50 bg-cyber-dark group relative">
                         <div class="relative overflow-hidden">
-                            <img src="${item.imageUrl}" alt="${item.name}" class="w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                            <img src="${item.imageUrl}" alt="${item.name}" class="w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onload="this.classList.add('loaded')">
                             <div class="absolute inset-0 bg-gradient-to-t from-cyber-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            <span class="absolute top-2 left-2 px-2 py-0.5 text-xs font-bold rounded ${badgeClass}">${badgeEmoji}</span>
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-cyber-black to-transparent">
                             <p class="font-display text-sm font-bold text-white truncate">${item.name}</p>
-                            ${item.affiliation ? `<p class="text-xs text-cyber-cyan truncate">${item.affiliation}</p>` : ''}
+                            ${subtitle}
                         </div>
                     </div>
                 `;
+
                 grid.appendChild(div);
 
-                // Animate in with stagger
+                // Tetris-like animation with stagger
                 setTimeout(() => {
-                    div.classList.remove('opacity-0', 'translate-y-4');
-                }, 50 + (index * 30));
+                    div.classList.add('animate-in');
+                }, 80 + (index * 60));
             });
 
             displayedImages = displayedImages.concat(batch);
             currentPage++;
             isLoadingMore = false;
         }
+
 
         function setupInfiniteScroll() {
             // Remove old observer if exists
@@ -685,9 +797,27 @@
         let currentImageIndex = 0;
         let currentCharacterImages = [];
 
-        function openModal(characterId) {
-            const char = allCharacters.find(c => c.id === characterId);
-            if (!char) return;
+        function openModal(itemId, itemType = 'character') {
+            // Busca no array correto baseado no tipo
+            let item;
+            if (itemType === 'character') {
+                item = allCharacters.find(c => c.id === parseInt(itemId) || c.id === itemId);
+            } else if (itemType === 'gang') {
+                item = allGangs.find(g => g.id === parseInt(itemId) || g.id === itemId);
+            } else if (itemType === 'district') {
+                item = allDistricts.find(d => d.id === parseInt(itemId) || d.id === itemId);
+            } else if (itemType === 'subdistrict') {
+                // Subdistritos: busca no allImages pelo ID composto
+                const found = allImages.find(img => img.id === itemId && img.itemType === 'subdistrict');
+                if (found) item = found;
+            }
+
+            if (!item) return;
+
+
+            // Alias para compatibilidade (char = item)
+            const char = item;
+
 
             // Store images for carousel
             currentCharacterImages = char.images || [];
@@ -697,7 +827,8 @@
             document.getElementById('modal-name').textContent = char.name;
 
             // ID Badge (Pokédex style)
-            document.getElementById('modal-id-badge').textContent = `#${String(char.id).padStart(3, '0')}`;
+            document.getElementById('modal-id-badge').textContent = `#${String(char.id).padStart(3, '0')
+                } `;
 
             // Character name
             document.getElementById('modal-char-name').textContent = char.name;
@@ -799,6 +930,7 @@
                 </button>
             `).join('');
 
+
             document.getElementById('character-modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
@@ -880,16 +1012,40 @@
         // Page Navigation
         // ============================================
         function loadPage(page) {
-            toggleSidebar();
-            // For now, just update title - can be expanded for SPA navigation
+            // Fecha sidebar no mobile
+            const sidebar = document.getElementById('sidebar');
+            if (!sidebar.classList.contains('-translate-x-full')) {
+                toggleSidebar();
+            }
+
+            // Mapeia página para categoria
+            const categoryMap = {
+                'images': 'all',
+                'characters': 'characters',
+                'gangs': 'gangs',
+                'districts': 'districts'
+            };
+
+            currentCategory = categoryMap[page] || 'all';
+
+            // Atualiza título
             const titles = {
-                'images': 'IMAGENS',
+                'all': 'TODAS AS IMAGENS',
+                'images': 'TODAS AS IMAGENS',
                 'characters': 'PERSONAGENS',
                 'gangs': 'GANGUES',
                 'districts': 'DISTRITOS'
             };
-            document.getElementById('page-title').textContent = titles[page] || 'HOME';
+            document.getElementById('page-title').textContent = titles[currentCategory] || 'HOME';
+
+            // Reconstrói lista de imagens e re-renderiza
+            buildImageList();
+            renderGallery();
+
+            // Scroll para conteúdo
+            document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
         }
+
 
         // ============================================
         // Utilities
